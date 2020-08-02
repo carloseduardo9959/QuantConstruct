@@ -31,45 +31,45 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPilares));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lblFerro6B = new System.Windows.Forms.Label();
             this.metroTile22 = new MetroFramework.Controls.MetroTile();
             this.metroTile23 = new MetroFramework.Controls.MetroTile();
             this.metroTile24 = new MetroFramework.Controls.MetroTile();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblFerro6kg = new System.Windows.Forms.Label();
             this.txtEspacamento = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lblFerro5B = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.metroTile25 = new MetroFramework.Controls.MetroTile();
             this.metroTile26 = new MetroFramework.Controls.MetroTile();
             this.metroTile27 = new MetroFramework.Controls.MetroTile();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lblFerro5kg = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lblFerro12B = new System.Windows.Forms.Label();
             this.metroTile16 = new MetroFramework.Controls.MetroTile();
             this.metroTile17 = new MetroFramework.Controls.MetroTile();
             this.metroTile18 = new MetroFramework.Controls.MetroTile();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblFerro12kg = new System.Windows.Forms.Label();
+            this.lblFerro10B = new System.Windows.Forms.Label();
             this.metroTile11 = new MetroFramework.Controls.MetroTile();
             this.metroTile14 = new MetroFramework.Controls.MetroTile();
             this.metroTile15 = new MetroFramework.Controls.MetroTile();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblFerro10kg = new System.Windows.Forms.Label();
             this.txtQtdBarras = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblFerro8B = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile13 = new MetroFramework.Controls.MetroTile();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblFerro8kg = new System.Windows.Forms.Label();
             this.lblForma = new System.Windows.Forms.Label();
             this.lblConcreto = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblAditivo = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblAgualt = new System.Windows.Forms.Label();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.lblBritalt = new System.Windows.Forms.Label();
@@ -97,10 +97,10 @@
             this.txtFCK = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtComprimento = new System.Windows.Forms.TextBox();
             this.txtAltura = new System.Windows.Forms.TextBox();
-            this.txtLargura = new System.Windows.Forms.TextBox();
-            this.txtQtdVigas = new System.Windows.Forms.TextBox();
+            this.txtLargura2 = new System.Windows.Forms.TextBox();
+            this.txtLargura1 = new System.Windows.Forms.TextBox();
+            this.txtQtdPilares = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -137,18 +137,18 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.lblFerro6B);
             this.groupBox4.Controls.Add(this.metroTile22);
             this.groupBox4.Controls.Add(this.metroTile23);
             this.groupBox4.Controls.Add(this.metroTile24);
-            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.lblFerro6kg);
             this.groupBox4.Controls.Add(this.txtEspacamento);
-            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.lblFerro5B);
             this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.metroTile25);
             this.groupBox4.Controls.Add(this.metroTile26);
             this.groupBox4.Controls.Add(this.metroTile27);
-            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.lblFerro5kg);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(700, 313);
             this.groupBox4.Name = "groupBox4";
@@ -157,15 +157,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Estribos";
             // 
-            // label26
+            // lblFerro6B
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(144, 159);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(15, 16);
-            this.label26.TabIndex = 65;
-            this.label26.Text = "0";
+            this.lblFerro6B.AutoSize = true;
+            this.lblFerro6B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro6B.Location = new System.Drawing.Point(144, 159);
+            this.lblFerro6B.Name = "lblFerro6B";
+            this.lblFerro6B.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro6B.TabIndex = 65;
+            this.lblFerro6B.Text = "0";
             // 
             // metroTile22
             // 
@@ -194,15 +194,15 @@
             this.metroTile24.Text = "kg:";
             this.metroTile24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label27
+            // lblFerro6kg
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(144, 128);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(15, 16);
-            this.label27.TabIndex = 66;
-            this.label27.Text = "0";
+            this.lblFerro6kg.AutoSize = true;
+            this.lblFerro6kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro6kg.Location = new System.Drawing.Point(144, 128);
+            this.lblFerro6kg.Name = "lblFerro6kg";
+            this.lblFerro6kg.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro6kg.TabIndex = 66;
+            this.lblFerro6kg.Text = "0";
             // 
             // txtEspacamento
             // 
@@ -213,15 +213,15 @@
             this.txtEspacamento.TabIndex = 58;
             this.txtEspacamento.Text = "20";
             // 
-            // label28
+            // lblFerro5B
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(144, 97);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(15, 16);
-            this.label28.TabIndex = 60;
-            this.label28.Text = "0";
+            this.lblFerro5B.AutoSize = true;
+            this.lblFerro5B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro5B.Location = new System.Drawing.Point(144, 97);
+            this.lblFerro5B.Name = "lblFerro5B";
+            this.lblFerro5B.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro5B.TabIndex = 60;
+            this.lblFerro5B.Text = "0";
             // 
             // label29
             // 
@@ -260,37 +260,37 @@
             this.metroTile27.Text = "kg:";
             this.metroTile27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label30
+            // lblFerro5kg
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(144, 66);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(15, 16);
-            this.label30.TabIndex = 61;
-            this.label30.Text = "0";
+            this.lblFerro5kg.AutoSize = true;
+            this.lblFerro5kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro5kg.Location = new System.Drawing.Point(144, 66);
+            this.lblFerro5kg.Name = "lblFerro5kg";
+            this.lblFerro5kg.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro5kg.TabIndex = 61;
+            this.lblFerro5kg.Text = "0";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.pictureBox1);
-            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.lblFerro12B);
             this.groupBox3.Controls.Add(this.metroTile16);
             this.groupBox3.Controls.Add(this.metroTile17);
             this.groupBox3.Controls.Add(this.metroTile18);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.lblFerro12kg);
+            this.groupBox3.Controls.Add(this.lblFerro10B);
             this.groupBox3.Controls.Add(this.metroTile11);
             this.groupBox3.Controls.Add(this.metroTile14);
             this.groupBox3.Controls.Add(this.metroTile15);
-            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.lblFerro10kg);
             this.groupBox3.Controls.Add(this.txtQtdBarras);
-            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.lblFerro8B);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.metroTile10);
             this.groupBox3.Controls.Add(this.metroTile13);
             this.groupBox3.Controls.Add(this.metroTile12);
-            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.lblFerro8kg);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(350, 313);
             this.groupBox3.Name = "groupBox3";
@@ -321,15 +321,15 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
-            // label22
+            // lblFerro12B
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(144, 221);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(15, 16);
-            this.label22.TabIndex = 53;
-            this.label22.Text = "0";
+            this.lblFerro12B.AutoSize = true;
+            this.lblFerro12B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro12B.Location = new System.Drawing.Point(144, 221);
+            this.lblFerro12B.Name = "lblFerro12B";
+            this.lblFerro12B.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro12B.TabIndex = 53;
+            this.lblFerro12B.Text = "0";
             // 
             // metroTile16
             // 
@@ -358,25 +358,25 @@
             this.metroTile18.Text = "kg:";
             this.metroTile18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // lblFerro12kg
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(144, 190);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(15, 16);
-            this.label23.TabIndex = 54;
-            this.label23.Text = "0";
+            this.lblFerro12kg.AutoSize = true;
+            this.lblFerro12kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro12kg.Location = new System.Drawing.Point(144, 190);
+            this.lblFerro12kg.Name = "lblFerro12kg";
+            this.lblFerro12kg.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro12kg.TabIndex = 54;
+            this.lblFerro12kg.Text = "0";
             // 
-            // label18
+            // lblFerro10B
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(144, 159);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(15, 16);
-            this.label18.TabIndex = 48;
-            this.label18.Text = "0";
+            this.lblFerro10B.AutoSize = true;
+            this.lblFerro10B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro10B.Location = new System.Drawing.Point(144, 159);
+            this.lblFerro10B.Name = "lblFerro10B";
+            this.lblFerro10B.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro10B.TabIndex = 48;
+            this.lblFerro10B.Text = "0";
             // 
             // metroTile11
             // 
@@ -405,15 +405,15 @@
             this.metroTile15.Text = "kg:";
             this.metroTile15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // lblFerro10kg
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(144, 128);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(15, 16);
-            this.label20.TabIndex = 49;
-            this.label20.Text = "0";
+            this.lblFerro10kg.AutoSize = true;
+            this.lblFerro10kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro10kg.Location = new System.Drawing.Point(144, 128);
+            this.lblFerro10kg.Name = "lblFerro10kg";
+            this.lblFerro10kg.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro10kg.TabIndex = 49;
+            this.lblFerro10kg.Text = "0";
             // 
             // txtQtdBarras
             // 
@@ -424,15 +424,15 @@
             this.txtQtdBarras.TabIndex = 20;
             this.txtQtdBarras.Text = "4";
             // 
-            // label19
+            // lblFerro8B
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(144, 97);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(15, 16);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "0";
+            this.lblFerro8B.AutoSize = true;
+            this.lblFerro8B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro8B.Location = new System.Drawing.Point(144, 97);
+            this.lblFerro8B.Name = "lblFerro8B";
+            this.lblFerro8B.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro8B.TabIndex = 41;
+            this.lblFerro8B.Text = "0";
             // 
             // label8
             // 
@@ -471,15 +471,15 @@
             this.metroTile12.Text = "kg:";
             this.metroTile12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // lblFerro8kg
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(144, 66);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(15, 16);
-            this.label21.TabIndex = 42;
-            this.label21.Text = "0";
+            this.lblFerro8kg.AutoSize = true;
+            this.lblFerro8kg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFerro8kg.Location = new System.Drawing.Point(144, 66);
+            this.lblFerro8kg.Name = "lblFerro8kg";
+            this.lblFerro8kg.Size = new System.Drawing.Size(15, 16);
+            this.lblFerro8kg.TabIndex = 42;
+            this.lblFerro8kg.Text = "0";
             // 
             // lblForma
             // 
@@ -524,7 +524,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblAditivo);
-            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.lblAgualt);
             this.groupBox2.Controls.Add(this.metroTile9);
             this.groupBox2.Controls.Add(this.metroTile8);
             this.groupBox2.Controls.Add(this.lblBritalt);
@@ -556,14 +556,14 @@
             this.lblAditivo.TabIndex = 36;
             this.lblAditivo.Text = "0";
             // 
-            // label17
+            // lblAgualt
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(120, 202);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(15, 16);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "0";
+            this.lblAgualt.AutoSize = true;
+            this.lblAgualt.Location = new System.Drawing.Point(120, 202);
+            this.lblAgualt.Name = "lblAgualt";
+            this.lblAgualt.Size = new System.Drawing.Size(15, 16);
+            this.lblAgualt.TabIndex = 35;
+            this.lblAgualt.Text = "0";
             // 
             // metroTile9
             // 
@@ -704,6 +704,7 @@
             this.btnCalcular.TabIndex = 24;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // panel1
             // 
@@ -830,10 +831,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtComprimento);
             this.groupBox1.Controls.Add(this.txtAltura);
-            this.groupBox1.Controls.Add(this.txtLargura);
-            this.groupBox1.Controls.Add(this.txtQtdVigas);
+            this.groupBox1.Controls.Add(this.txtLargura2);
+            this.groupBox1.Controls.Add(this.txtLargura1);
+            this.groupBox1.Controls.Add(this.txtQtdPilares);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
@@ -846,33 +847,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Levantamento de Quantidades";
             // 
-            // txtComprimento
-            // 
-            this.txtComprimento.Location = new System.Drawing.Point(78, 130);
-            this.txtComprimento.Name = "txtComprimento";
-            this.txtComprimento.Size = new System.Drawing.Size(65, 22);
-            this.txtComprimento.TabIndex = 4;
-            // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(104, 98);
+            this.txtAltura.Location = new System.Drawing.Point(78, 130);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(65, 22);
-            this.txtAltura.TabIndex = 3;
+            this.txtAltura.TabIndex = 4;
             // 
-            // txtLargura
+            // txtLargura2
             // 
-            this.txtLargura.Location = new System.Drawing.Point(104, 66);
-            this.txtLargura.Name = "txtLargura";
-            this.txtLargura.Size = new System.Drawing.Size(65, 22);
-            this.txtLargura.TabIndex = 2;
+            this.txtLargura2.Location = new System.Drawing.Point(104, 98);
+            this.txtLargura2.Name = "txtLargura2";
+            this.txtLargura2.Size = new System.Drawing.Size(65, 22);
+            this.txtLargura2.TabIndex = 3;
             // 
-            // txtQtdVigas
+            // txtLargura1
             // 
-            this.txtQtdVigas.Location = new System.Drawing.Point(150, 35);
-            this.txtQtdVigas.Name = "txtQtdVigas";
-            this.txtQtdVigas.Size = new System.Drawing.Size(65, 22);
-            this.txtQtdVigas.TabIndex = 1;
+            this.txtLargura1.Location = new System.Drawing.Point(104, 66);
+            this.txtLargura1.Name = "txtLargura1";
+            this.txtLargura1.Size = new System.Drawing.Size(65, 22);
+            this.txtLargura1.TabIndex = 2;
+            // 
+            // txtQtdPilares
+            // 
+            this.txtQtdPilares.Location = new System.Drawing.Point(150, 35);
+            this.txtQtdPilares.Name = "txtQtdPilares";
+            this.txtQtdPilares.Size = new System.Drawing.Size(65, 22);
+            this.txtQtdPilares.TabIndex = 1;
             // 
             // label5
             // 
@@ -1076,44 +1077,44 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lblFerro6B;
         private MetroFramework.Controls.MetroTile metroTile22;
         private MetroFramework.Controls.MetroTile metroTile23;
         private MetroFramework.Controls.MetroTile metroTile24;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblFerro6kg;
         private System.Windows.Forms.TextBox txtEspacamento;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lblFerro5B;
         private System.Windows.Forms.Label label29;
         private MetroFramework.Controls.MetroTile metroTile25;
         private MetroFramework.Controls.MetroTile metroTile26;
         private MetroFramework.Controls.MetroTile metroTile27;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lblFerro5kg;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblFerro12B;
         private MetroFramework.Controls.MetroTile metroTile16;
         private MetroFramework.Controls.MetroTile metroTile17;
         private MetroFramework.Controls.MetroTile metroTile18;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblFerro12kg;
+        private System.Windows.Forms.Label lblFerro10B;
         private MetroFramework.Controls.MetroTile metroTile11;
         private MetroFramework.Controls.MetroTile metroTile14;
         private MetroFramework.Controls.MetroTile metroTile15;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblFerro10kg;
         private System.Windows.Forms.TextBox txtQtdBarras;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblFerro8B;
         private System.Windows.Forms.Label label8;
         private MetroFramework.Controls.MetroTile metroTile10;
         private MetroFramework.Controls.MetroTile metroTile13;
         private MetroFramework.Controls.MetroTile metroTile12;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblFerro8kg;
         private System.Windows.Forms.Label lblForma;
         private System.Windows.Forms.Label lblConcreto;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblAditivo;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblAgualt;
         private MetroFramework.Controls.MetroTile metroTile9;
         private MetroFramework.Controls.MetroTile metroTile8;
         private System.Windows.Forms.Label lblBritalt;
@@ -1141,10 +1142,10 @@
         private System.Windows.Forms.TextBox txtFCK;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtComprimento;
         private System.Windows.Forms.TextBox txtAltura;
-        private System.Windows.Forms.TextBox txtLargura;
-        private System.Windows.Forms.TextBox txtQtdVigas;
+        private System.Windows.Forms.TextBox txtLargura2;
+        private System.Windows.Forms.TextBox txtLargura1;
+        private System.Windows.Forms.TextBox txtQtdPilares;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
