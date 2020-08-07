@@ -20,12 +20,12 @@ namespace GUI_V_2
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             double cimento = 0;
-            double areiaLT = 0,areiaMT = 0;
+            double areiaLT = 0, areiaMT = 0;
             double britaLT = 0, britaMT = 0;
             double agua = 0, aditivo = 0;
 
             double concreto = int.Parse(txtQtdVigas.Text) * double.Parse(txtAltura.Text) * double.Parse(txtComprimento.Text) * double.Parse(txtLargura.Text);
-            double forma = 2 * double.Parse(txtAltura.Text) * int.Parse(txtQtdVigas.Text) * double.Parse(txtComprimento.Text);
+            double forma = (2 * double.Parse(txtAltura.Text)) * int.Parse(txtQtdVigas.Text) * double.Parse(txtComprimento.Text);
             lblConcreto.Text = concreto.ToString();
             lblForma.Text = forma.ToString();
 
