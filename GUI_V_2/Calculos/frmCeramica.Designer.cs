@@ -39,14 +39,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAlturaC = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtRejuntamento = new System.Windows.Forms.TextBox();
             this.txtComprimentoC = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtLarguraC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblTotalPiso = new System.Windows.Forms.Label();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.lblRejunte = new System.Windows.Forms.Label();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
@@ -59,8 +61,12 @@
             this.txtCoeficiente = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.lblTotalPiso = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -81,6 +87,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtQtd);
             this.groupBox1.Controls.Add(this.txtComprimento);
             this.groupBox1.Controls.Add(this.label2);
@@ -133,9 +141,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 16);
+            this.label3.Size = new System.Drawing.Size(111, 16);
             this.label3.TabIndex = 31;
-            this.label3.Text = "Comprimento (C)[m]:";
+            this.label3.Text = "Comprimento (C):";
             // 
             // label5
             // 
@@ -143,12 +151,16 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.Size = new System.Drawing.Size(78, 16);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Largura (L) [m]:";
+            this.label5.Text = "Largura (L) :";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtAlturaC);
             this.groupBox2.Controls.Add(this.txtRejuntamento);
             this.groupBox2.Controls.Add(this.txtComprimentoC);
@@ -172,16 +184,6 @@
             this.txtAlturaC.Size = new System.Drawing.Size(65, 22);
             this.txtAlturaC.TabIndex = 6;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 16);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Altura (A):";
-            // 
             // txtRejuntamento
             // 
             this.txtRejuntamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -196,6 +198,16 @@
             this.txtComprimentoC.Name = "txtComprimentoC";
             this.txtComprimentoC.Size = new System.Drawing.Size(65, 22);
             this.txtComprimentoC.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 16);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "Altura (A):";
             // 
             // txtLarguraC
             // 
@@ -251,6 +263,25 @@
             this.groupBox3.TabIndex = 67;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resultado";
+            // 
+            // lblTotalPiso
+            // 
+            this.lblTotalPiso.AutoSize = true;
+            this.lblTotalPiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPiso.Location = new System.Drawing.Point(177, 134);
+            this.lblTotalPiso.Name = "lblTotalPiso";
+            this.lblTotalPiso.Size = new System.Drawing.Size(15, 16);
+            this.lblTotalPiso.TabIndex = 74;
+            this.lblTotalPiso.Text = "0";
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.Location = new System.Drawing.Point(6, 125);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(165, 25);
+            this.metroTile2.TabIndex = 74;
+            this.metroTile2.Text = "Qtd Piso c/ rodapé (m2):";
+            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblRejunte
             // 
@@ -371,24 +402,65 @@
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
-            // metroTile2
+            // label10
             // 
-            this.metroTile2.Location = new System.Drawing.Point(6, 125);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(165, 25);
-            this.metroTile2.TabIndex = 74;
-            this.metroTile2.Text = "Qtd Piso c/ rodapé (m2):";
-            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(177, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(22, 16);
+            this.label10.TabIndex = 74;
+            this.label10.Text = "mt";
             // 
-            // lblTotalPiso
+            // label11
             // 
-            this.lblTotalPiso.AutoSize = true;
-            this.lblTotalPiso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPiso.Location = new System.Drawing.Point(177, 134);
-            this.lblTotalPiso.Name = "lblTotalPiso";
-            this.lblTotalPiso.Size = new System.Drawing.Size(15, 16);
-            this.lblTotalPiso.TabIndex = 74;
-            this.lblTotalPiso.Text = "0";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(213, 98);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 16);
+            this.label11.TabIndex = 75;
+            this.label11.Text = "mt";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(158, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 16);
+            this.label12.TabIndex = 76;
+            this.label12.Text = "cm";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(194, 67);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 16);
+            this.label13.TabIndex = 77;
+            this.label13.Text = "cm";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(148, 96);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(30, 16);
+            this.label14.TabIndex = 78;
+            this.label14.Text = "mm";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(194, 131);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(30, 16);
+            this.label15.TabIndex = 79;
+            this.label15.Text = "mm";
             // 
             // frmCeramica
             // 
@@ -457,5 +529,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTotalPiso;
         private MetroFramework.Controls.MetroTile metroTile2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }

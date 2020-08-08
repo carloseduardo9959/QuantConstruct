@@ -38,54 +38,57 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtQtdPorta = new System.Windows.Forms.TextBox();
+            this.txtAlturaPorta = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBasePorta = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtQtdJanelas = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAlturaJanela = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBaseJanela = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtLarguraTeto = new System.Windows.Forms.TextBox();
+            this.txtComprimentoTeto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtQtdLado = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtAlturaParede = new System.Windows.Forms.TextBox();
+            this.txtComprimentoParede = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblAcrLT = new System.Windows.Forms.Label();
+            this.lblTintaLT = new System.Windows.Forms.Label();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblAcrLitros = new System.Windows.Forms.Label();
+            this.lblTintaLitros = new System.Windows.Forms.Label();
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.metroTile11 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.lblBritalt = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblMassaLT = new System.Windows.Forms.Label();
+            this.lblAreaParede = new System.Windows.Forms.Label();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
-            this.lblBritamt = new System.Windows.Forms.Label();
-            this.lblArea = new System.Windows.Forms.Label();
+            this.lblMassaLitros = new System.Windows.Forms.Label();
+            this.lblAreaTeto = new System.Windows.Forms.Label();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -96,6 +99,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -117,7 +121,8 @@
             this.comboBox2.Location = new System.Drawing.Point(653, 38);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(82, 21);
-            this.comboBox2.TabIndex = 54;
+            this.comboBox2.TabIndex = 10;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -129,7 +134,8 @@
             this.comboBox1.Location = new System.Drawing.Point(390, 42);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(82, 21);
-            this.comboBox1.TabIndex = 53;
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -186,10 +192,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.txtQtdPorta);
+            this.groupBox4.Controls.Add(this.txtAlturaPorta);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.txtBasePorta);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,20 +206,20 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Portas";
             // 
-            // textBox1
+            // txtQtdPorta
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.Location = new System.Drawing.Point(150, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(65, 22);
-            this.textBox1.TabIndex = 36;
+            this.txtQtdPorta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtQtdPorta.Location = new System.Drawing.Point(150, 34);
+            this.txtQtdPorta.Name = "txtQtdPorta";
+            this.txtQtdPorta.Size = new System.Drawing.Size(65, 22);
+            this.txtQtdPorta.TabIndex = 11;
             // 
-            // textBox2
+            // txtAlturaPorta
             // 
-            this.textBox2.Location = new System.Drawing.Point(55, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(65, 22);
-            this.textBox2.TabIndex = 30;
+            this.txtAlturaPorta.Location = new System.Drawing.Point(55, 92);
+            this.txtAlturaPorta.Name = "txtAlturaPorta";
+            this.txtAlturaPorta.Size = new System.Drawing.Size(65, 22);
+            this.txtAlturaPorta.TabIndex = 13;
             // 
             // label8
             // 
@@ -225,12 +231,12 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Quantidade de Portas:";
             // 
-            // textBox5
+            // txtBasePorta
             // 
-            this.textBox5.Location = new System.Drawing.Point(55, 64);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(65, 22);
-            this.textBox5.TabIndex = 29;
+            this.txtBasePorta.Location = new System.Drawing.Point(55, 64);
+            this.txtBasePorta.Name = "txtBasePorta";
+            this.txtBasePorta.Size = new System.Drawing.Size(65, 22);
+            this.txtBasePorta.TabIndex = 12;
             // 
             // label10
             // 
@@ -255,9 +261,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtQtdJanelas);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtAlturaJanela);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtBaseJanela);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,14 +280,14 @@
             this.txtQtdJanelas.Location = new System.Drawing.Point(163, 34);
             this.txtQtdJanelas.Name = "txtQtdJanelas";
             this.txtQtdJanelas.Size = new System.Drawing.Size(65, 22);
-            this.txtQtdJanelas.TabIndex = 36;
+            this.txtQtdJanelas.TabIndex = 7;
             // 
-            // textBox3
+            // txtAlturaJanela
             // 
-            this.textBox3.Location = new System.Drawing.Point(55, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(65, 22);
-            this.textBox3.TabIndex = 30;
+            this.txtAlturaJanela.Location = new System.Drawing.Point(55, 92);
+            this.txtAlturaJanela.Name = "txtAlturaJanela";
+            this.txtAlturaJanela.Size = new System.Drawing.Size(65, 22);
+            this.txtAlturaJanela.TabIndex = 9;
             // 
             // label6
             // 
@@ -293,12 +299,12 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Quantidade de Janelas:";
             // 
-            // textBox4
+            // txtBaseJanela
             // 
-            this.textBox4.Location = new System.Drawing.Point(55, 64);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(65, 22);
-            this.textBox4.TabIndex = 29;
+            this.txtBaseJanela.Location = new System.Drawing.Point(55, 64);
+            this.txtBaseJanela.Name = "txtBaseJanela";
+            this.txtBaseJanela.Size = new System.Drawing.Size(65, 22);
+            this.txtBaseJanela.TabIndex = 8;
             // 
             // label7
             // 
@@ -336,8 +342,8 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox6);
-            this.groupBox5.Controls.Add(this.textBox9);
+            this.groupBox5.Controls.Add(this.txtLarguraTeto);
+            this.groupBox5.Controls.Add(this.txtComprimentoTeto);
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,19 +354,19 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Teto";
             // 
-            // textBox6
+            // txtLarguraTeto
             // 
-            this.textBox6.Location = new System.Drawing.Point(69, 24);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(65, 22);
-            this.textBox6.TabIndex = 30;
+            this.txtLarguraTeto.Location = new System.Drawing.Point(69, 24);
+            this.txtLarguraTeto.Name = "txtLarguraTeto";
+            this.txtLarguraTeto.Size = new System.Drawing.Size(65, 22);
+            this.txtLarguraTeto.TabIndex = 4;
             // 
-            // textBox9
+            // txtComprimentoTeto
             // 
-            this.textBox9.Location = new System.Drawing.Point(103, 57);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(65, 22);
-            this.textBox9.TabIndex = 29;
+            this.txtComprimentoTeto.Location = new System.Drawing.Point(103, 57);
+            this.txtComprimentoTeto.Name = "txtComprimentoTeto";
+            this.txtComprimentoTeto.Size = new System.Drawing.Size(65, 22);
+            this.txtComprimentoTeto.TabIndex = 5;
             // 
             // label3
             // 
@@ -392,8 +398,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txtAlturaParede);
+            this.groupBox2.Controls.Add(this.txtComprimentoParede);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -404,19 +410,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parede";
             // 
-            // textBox7
+            // txtAlturaParede
             // 
-            this.textBox7.Location = new System.Drawing.Point(57, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(65, 22);
-            this.textBox7.TabIndex = 30;
+            this.txtAlturaParede.Location = new System.Drawing.Point(57, 24);
+            this.txtAlturaParede.Name = "txtAlturaParede";
+            this.txtAlturaParede.Size = new System.Drawing.Size(65, 22);
+            this.txtAlturaParede.TabIndex = 2;
             // 
-            // textBox8
+            // txtComprimentoParede
             // 
-            this.textBox8.Location = new System.Drawing.Point(103, 57);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(65, 22);
-            this.textBox8.TabIndex = 29;
+            this.txtComprimentoParede.Location = new System.Drawing.Point(103, 57);
+            this.txtComprimentoParede.Name = "txtComprimentoParede";
+            this.txtComprimentoParede.Size = new System.Drawing.Size(65, 22);
+            this.txtComprimentoParede.TabIndex = 3;
             // 
             // label4
             // 
@@ -461,23 +467,23 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Controls.Add(this.label16);
+            this.groupBox6.Controls.Add(this.lblAcrLT);
+            this.groupBox6.Controls.Add(this.lblTintaLT);
             this.groupBox6.Controls.Add(this.metroTile8);
             this.groupBox6.Controls.Add(this.metroTile3);
-            this.groupBox6.Controls.Add(this.label19);
-            this.groupBox6.Controls.Add(this.label17);
+            this.groupBox6.Controls.Add(this.lblAcrLitros);
+            this.groupBox6.Controls.Add(this.lblTintaLitros);
             this.groupBox6.Controls.Add(this.metroTile10);
             this.groupBox6.Controls.Add(this.metroTile7);
             this.groupBox6.Controls.Add(this.metroTile11);
             this.groupBox6.Controls.Add(this.metroTile1);
-            this.groupBox6.Controls.Add(this.lblBritalt);
-            this.groupBox6.Controls.Add(this.label15);
+            this.groupBox6.Controls.Add(this.lblMassaLT);
+            this.groupBox6.Controls.Add(this.lblAreaParede);
             this.groupBox6.Controls.Add(this.metroTile4);
             this.groupBox6.Controls.Add(this.metroTile2);
             this.groupBox6.Controls.Add(this.metroTile9);
-            this.groupBox6.Controls.Add(this.lblBritamt);
-            this.groupBox6.Controls.Add(this.lblArea);
+            this.groupBox6.Controls.Add(this.lblMassaLitros);
+            this.groupBox6.Controls.Add(this.lblAreaTeto);
             this.groupBox6.Controls.Add(this.metroTile5);
             this.groupBox6.Controls.Add(this.metroTile6);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -488,25 +494,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Resultado";
             // 
-            // label18
+            // lblAcrLT
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(211, 247);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(15, 16);
-            this.label18.TabIndex = 84;
-            this.label18.Text = "0";
+            this.lblAcrLT.AutoSize = true;
+            this.lblAcrLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAcrLT.Location = new System.Drawing.Point(211, 247);
+            this.lblAcrLT.Name = "lblAcrLT";
+            this.lblAcrLT.Size = new System.Drawing.Size(15, 16);
+            this.lblAcrLT.TabIndex = 84;
+            this.lblAcrLT.Text = "0";
             // 
-            // label16
+            // lblTintaLT
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(211, 185);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(15, 16);
-            this.label16.TabIndex = 79;
-            this.label16.Text = "0";
+            this.lblTintaLT.AutoSize = true;
+            this.lblTintaLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTintaLT.Location = new System.Drawing.Point(211, 185);
+            this.lblTintaLT.Name = "lblTintaLT";
+            this.lblTintaLT.Size = new System.Drawing.Size(15, 16);
+            this.lblTintaLT.TabIndex = 79;
+            this.lblTintaLT.Text = "0";
             // 
             // metroTile8
             // 
@@ -526,25 +532,25 @@
             this.metroTile3.Text = "lata:";
             this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // lblAcrLitros
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(211, 216);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(15, 16);
-            this.label19.TabIndex = 83;
-            this.label19.Text = "0";
+            this.lblAcrLitros.AutoSize = true;
+            this.lblAcrLitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAcrLitros.Location = new System.Drawing.Point(211, 216);
+            this.lblAcrLitros.Name = "lblAcrLitros";
+            this.lblAcrLitros.Size = new System.Drawing.Size(15, 16);
+            this.lblAcrLitros.TabIndex = 83;
+            this.lblAcrLitros.Text = "0";
             // 
-            // label17
+            // lblTintaLitros
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(211, 154);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(15, 16);
-            this.label17.TabIndex = 78;
-            this.label17.Text = "0";
+            this.lblTintaLitros.AutoSize = true;
+            this.lblTintaLitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTintaLitros.Location = new System.Drawing.Point(211, 154);
+            this.lblTintaLitros.Name = "lblTintaLitros";
+            this.lblTintaLitros.Size = new System.Drawing.Size(15, 16);
+            this.lblTintaLitros.TabIndex = 78;
+            this.lblTintaLitros.Text = "0";
             // 
             // metroTile10
             // 
@@ -582,25 +588,25 @@
             this.metroTile1.Text = "Tinta fosco\r\npara teto:";
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblBritalt
+            // lblMassaLT
             // 
-            this.lblBritalt.AutoSize = true;
-            this.lblBritalt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBritalt.Location = new System.Drawing.Point(211, 123);
-            this.lblBritalt.Name = "lblBritalt";
-            this.lblBritalt.Size = new System.Drawing.Size(15, 16);
-            this.lblBritalt.TabIndex = 73;
-            this.lblBritalt.Text = "0";
+            this.lblMassaLT.AutoSize = true;
+            this.lblMassaLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMassaLT.Location = new System.Drawing.Point(211, 123);
+            this.lblMassaLT.Name = "lblMassaLT";
+            this.lblMassaLT.Size = new System.Drawing.Size(15, 16);
+            this.lblMassaLT.TabIndex = 73;
+            this.lblMassaLT.Text = "0";
             // 
-            // label15
+            // lblAreaParede
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(177, 61);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(15, 16);
-            this.label15.TabIndex = 75;
-            this.label15.Text = "0";
+            this.lblAreaParede.AutoSize = true;
+            this.lblAreaParede.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaParede.Location = new System.Drawing.Point(177, 61);
+            this.lblAreaParede.Name = "lblAreaParede";
+            this.lblAreaParede.Size = new System.Drawing.Size(15, 16);
+            this.lblAreaParede.TabIndex = 75;
+            this.lblAreaParede.Text = "0";
             // 
             // metroTile4
             // 
@@ -629,25 +635,25 @@
             this.metroTile9.Text = "Área do Teto (m2):";
             this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblBritamt
+            // lblMassaLitros
             // 
-            this.lblBritamt.AutoSize = true;
-            this.lblBritamt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBritamt.Location = new System.Drawing.Point(211, 92);
-            this.lblBritamt.Name = "lblBritamt";
-            this.lblBritamt.Size = new System.Drawing.Size(15, 16);
-            this.lblBritamt.TabIndex = 72;
-            this.lblBritamt.Text = "0";
+            this.lblMassaLitros.AutoSize = true;
+            this.lblMassaLitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMassaLitros.Location = new System.Drawing.Point(211, 92);
+            this.lblMassaLitros.Name = "lblMassaLitros";
+            this.lblMassaLitros.Size = new System.Drawing.Size(15, 16);
+            this.lblMassaLitros.TabIndex = 72;
+            this.lblMassaLitros.Text = "0";
             // 
-            // lblArea
+            // lblAreaTeto
             // 
-            this.lblArea.AutoSize = true;
-            this.lblArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArea.Location = new System.Drawing.Point(177, 30);
-            this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(15, 16);
-            this.lblArea.TabIndex = 70;
-            this.lblArea.Text = "0";
+            this.lblAreaTeto.AutoSize = true;
+            this.lblAreaTeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaTeto.Location = new System.Drawing.Point(177, 30);
+            this.lblAreaTeto.Name = "lblAreaTeto";
+            this.lblAreaTeto.Size = new System.Drawing.Size(15, 16);
+            this.lblAreaTeto.TabIndex = 70;
+            this.lblAreaTeto.Text = "0";
             // 
             // metroTile5
             // 
@@ -672,9 +678,41 @@
             this.btnCalcular.Location = new System.Drawing.Point(274, 288);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 69;
+            this.btnCalcular.TabIndex = 14;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(19, 12);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(148, 16);
+            this.label15.TabIndex = 69;
+            this.label15.Text = "Quantidade de Demão:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.textBox1.Location = new System.Drawing.Point(170, 9);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(22, 22);
+            this.textBox1.TabIndex = 70;
+            this.textBox1.Text = "3";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(309, 323);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(220, 40);
+            this.panel1.TabIndex = 71;
             // 
             // frmPintura
             // 
@@ -682,6 +720,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1050, 610);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.pictureBox3);
@@ -699,6 +738,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPintura";
             this.Text = "frmPintura";
+            this.Load += new System.EventHandler(this.frmPintura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).EndInit();
@@ -715,6 +755,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -731,53 +773,56 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnlogoInicio;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtQtdPorta;
+        private System.Windows.Forms.TextBox txtAlturaPorta;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBasePorta;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtQtdJanelas;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAlturaJanela;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBaseJanela;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtLarguraTeto;
+        private System.Windows.Forms.TextBox txtComprimentoTeto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtQtdLado;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtAlturaParede;
+        private System.Windows.Forms.TextBox txtComprimentoParede;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblAreaParede;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile9;
-        private System.Windows.Forms.Label lblArea;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblAreaTeto;
+        private System.Windows.Forms.Label lblAcrLT;
+        private System.Windows.Forms.Label lblTintaLT;
         private MetroFramework.Controls.MetroTile metroTile8;
         private MetroFramework.Controls.MetroTile metroTile3;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblAcrLitros;
+        private System.Windows.Forms.Label lblTintaLitros;
         private MetroFramework.Controls.MetroTile metroTile10;
         private MetroFramework.Controls.MetroTile metroTile7;
         private MetroFramework.Controls.MetroTile metroTile11;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private System.Windows.Forms.Label lblBritalt;
+        private System.Windows.Forms.Label lblMassaLT;
         private MetroFramework.Controls.MetroTile metroTile4;
-        private System.Windows.Forms.Label lblBritamt;
+        private System.Windows.Forms.Label lblMassaLitros;
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile metroTile6;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
