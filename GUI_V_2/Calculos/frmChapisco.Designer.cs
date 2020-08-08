@@ -31,9 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChapisco));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblAguaLT = new System.Windows.Forms.Label();
             this.lblAditivo = new System.Windows.Forms.Label();
+            this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.lblAguaLitros = new System.Windows.Forms.Label();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.metroTile11 = new MetroFramework.Controls.MetroTile();
             this.lblAreialt = new System.Windows.Forms.Label();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
@@ -67,7 +71,7 @@
             this.txtBasePorta = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtQtdPortas = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCalcular = new System.Windows.Forms.Button();
@@ -83,15 +87,11 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.lblAguaLT = new System.Windows.Forms.Label();
-            this.metroTile10 = new MetroFramework.Controls.MetroTile();
-            this.lblAguaLitros = new System.Windows.Forms.Label();
-            this.metroTile11 = new MetroFramework.Controls.MetroTile();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtQtdPortas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -131,6 +131,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultado";
             // 
+            // lblAguaLT
+            // 
+            this.lblAguaLT.AutoSize = true;
+            this.lblAguaLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAguaLT.Location = new System.Drawing.Point(119, 165);
+            this.lblAguaLT.Name = "lblAguaLT";
+            this.lblAguaLT.Size = new System.Drawing.Size(15, 16);
+            this.lblAguaLT.TabIndex = 53;
+            this.lblAguaLT.Text = "0";
+            // 
             // lblAditivo
             // 
             this.lblAditivo.AutoSize = true;
@@ -139,6 +149,15 @@
             this.lblAditivo.Size = new System.Drawing.Size(15, 16);
             this.lblAditivo.TabIndex = 36;
             this.lblAditivo.Text = "0";
+            // 
+            // metroTile10
+            // 
+            this.metroTile10.Location = new System.Drawing.Point(65, 156);
+            this.metroTile10.Name = "metroTile10";
+            this.metroTile10.Size = new System.Drawing.Size(48, 25);
+            this.metroTile10.TabIndex = 51;
+            this.metroTile10.Text = "lata:";
+            this.metroTile10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroTile9
             // 
@@ -149,6 +168,16 @@
             this.metroTile9.Text = "Bianco (litro):";
             this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblAguaLitros
+            // 
+            this.lblAguaLitros.AutoSize = true;
+            this.lblAguaLitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAguaLitros.Location = new System.Drawing.Point(119, 134);
+            this.lblAguaLitros.Name = "lblAguaLitros";
+            this.lblAguaLitros.Size = new System.Drawing.Size(15, 16);
+            this.lblAguaLitros.TabIndex = 52;
+            this.lblAguaLitros.Text = "0";
+            // 
             // metroTile8
             // 
             this.metroTile8.Location = new System.Drawing.Point(6, 125);
@@ -157,6 +186,15 @@
             this.metroTile8.TabIndex = 27;
             this.metroTile8.Text = "Água ";
             this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile11
+            // 
+            this.metroTile11.Location = new System.Drawing.Point(65, 125);
+            this.metroTile11.Name = "metroTile11";
+            this.metroTile11.Size = new System.Drawing.Size(48, 25);
+            this.metroTile11.TabIndex = 50;
+            this.metroTile11.Text = "litros:";
+            this.metroTile11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAreialt
             // 
@@ -484,16 +522,16 @@
             this.label11.TabIndex = 33;
             this.label11.Text = "Base:";
             // 
-            // txtQtdPortas
+            // pictureBox3
             // 
-            this.txtQtdPortas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtQtdPortas.Image = ((System.Drawing.Image)(resources.GetObject("txtQtdPortas.Image")));
-            this.txtQtdPortas.Location = new System.Drawing.Point(826, 32);
-            this.txtQtdPortas.Name = "txtQtdPortas";
-            this.txtQtdPortas.Size = new System.Drawing.Size(232, 182);
-            this.txtQtdPortas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.txtQtdPortas.TabIndex = 37;
-            this.txtQtdPortas.TabStop = false;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(826, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(232, 182);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -655,44 +693,6 @@
             this.label38.TabIndex = 0;
             this.label38.Text = "Traço do Chapisco";
             // 
-            // lblAguaLT
-            // 
-            this.lblAguaLT.AutoSize = true;
-            this.lblAguaLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAguaLT.Location = new System.Drawing.Point(119, 165);
-            this.lblAguaLT.Name = "lblAguaLT";
-            this.lblAguaLT.Size = new System.Drawing.Size(15, 16);
-            this.lblAguaLT.TabIndex = 53;
-            this.lblAguaLT.Text = "0";
-            // 
-            // metroTile10
-            // 
-            this.metroTile10.Location = new System.Drawing.Point(65, 156);
-            this.metroTile10.Name = "metroTile10";
-            this.metroTile10.Size = new System.Drawing.Size(48, 25);
-            this.metroTile10.TabIndex = 51;
-            this.metroTile10.Text = "lata:";
-            this.metroTile10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAguaLitros
-            // 
-            this.lblAguaLitros.AutoSize = true;
-            this.lblAguaLitros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAguaLitros.Location = new System.Drawing.Point(119, 134);
-            this.lblAguaLitros.Name = "lblAguaLitros";
-            this.lblAguaLitros.Size = new System.Drawing.Size(15, 16);
-            this.lblAguaLitros.TabIndex = 52;
-            this.lblAguaLitros.Text = "0";
-            // 
-            // metroTile11
-            // 
-            this.metroTile11.Location = new System.Drawing.Point(65, 125);
-            this.metroTile11.Name = "metroTile11";
-            this.metroTile11.Size = new System.Drawing.Size(48, 25);
-            this.metroTile11.TabIndex = 50;
-            this.metroTile11.Text = "litros:";
-            this.metroTile11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmChapisco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -711,7 +711,7 @@
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtQtdPortas);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -729,7 +729,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtQtdPortas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -776,7 +776,7 @@
         private System.Windows.Forms.TextBox txtBasePorta;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox txtQtdPortas;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnCalcular;
