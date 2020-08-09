@@ -32,8 +32,7 @@ namespace GUI_V_2.Calculos
             int FCK = int.Parse(txtFCK.Text);
             if (FCK == 15)
             {
-                cimento = ((271 / 50) * concreto);
-                cimento = cimento + (cimento * 0.10);
+                cimento = ((5.42) * concreto); // [271/50]=5.42
 
                 areiaLT = 6.3 * cimento;
                 areiaMT = areiaLT * 0.018;
@@ -45,8 +44,7 @@ namespace GUI_V_2.Calculos
             }
             else if (FCK == 20)
             {
-                cimento = ((305 / 50) * concreto);
-                cimento = cimento + (cimento * 0.10);
+                cimento = ((6.1) * concreto); //[305/50]=6.1
 
                 areiaLT = 5.5 * cimento;
                 areiaMT = areiaLT * 0.018;
@@ -58,8 +56,7 @@ namespace GUI_V_2.Calculos
             }
             else if (FCK == 25)
             {
-                cimento = ((329 / 50) * concreto);
-                cimento = cimento + (cimento * 0.10);
+                cimento = ((6.58) * concreto); //[329/50]=6.58
 
                 areiaLT = 5.1 * cimento;
                 areiaMT = areiaLT * 0.018;

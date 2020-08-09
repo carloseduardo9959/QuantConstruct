@@ -35,8 +35,8 @@
             this.txtAltura = new System.Windows.Forms.TextBox();
             this.txtLargura = new System.Windows.Forms.TextBox();
             this.txtQtd = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,6 +56,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblTelhaGrossa = new System.Windows.Forms.Label();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.lblQtdRipas = new System.Windows.Forms.Label();
             this.lblQtdCaibros = new System.Windows.Forms.Label();
             this.lblQtdTerças = new System.Windows.Forms.Label();
@@ -74,8 +76,7 @@
             this.lblArea = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
-            this.lblTelhaGrossa = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -146,16 +147,6 @@
             this.txtQtd.Size = new System.Drawing.Size(65, 22);
             this.txtQtd.TabIndex = 1;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Altura (H):";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -165,6 +156,16 @@
             this.label2.Size = new System.Drawing.Size(161, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Quantidade de Telhados:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 16);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Altura (H):";
             // 
             // label4
             // 
@@ -384,6 +385,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Quantitativos dos materiais:";
             // 
+            // lblTelhaGrossa
+            // 
+            this.lblTelhaGrossa.AutoSize = true;
+            this.lblTelhaGrossa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaGrossa.Location = new System.Drawing.Point(177, 62);
+            this.lblTelhaGrossa.Name = "lblTelhaGrossa";
+            this.lblTelhaGrossa.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaGrossa.TabIndex = 88;
+            this.lblTelhaGrossa.Text = "0";
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.Location = new System.Drawing.Point(6, 53);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(165, 25);
+            this.metroTile8.TabIndex = 87;
+            this.metroTile8.Text = "Telha Grossa:";
+            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblQtdRipas
             // 
             this.lblQtdRipas.AutoSize = true;
@@ -559,24 +579,17 @@
             this.pictureBox7.TabIndex = 71;
             this.pictureBox7.TabStop = false;
             // 
-            // metroTile8
+            // label12
             // 
-            this.metroTile8.Location = new System.Drawing.Point(6, 53);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(165, 25);
-            this.metroTile8.TabIndex = 87;
-            this.metroTile8.Text = "Telha Grossa:";
-            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTelhaGrossa
-            // 
-            this.lblTelhaGrossa.AutoSize = true;
-            this.lblTelhaGrossa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelhaGrossa.Location = new System.Drawing.Point(177, 62);
-            this.lblTelhaGrossa.Name = "lblTelhaGrossa";
-            this.lblTelhaGrossa.Size = new System.Drawing.Size(15, 16);
-            this.lblTelhaGrossa.TabIndex = 88;
-            this.lblTelhaGrossa.Text = "0";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(66, 378);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(497, 16);
+            this.label12.TabIndex = 72;
+            this.label12.Text = "*Obs: A quantidade de terças, caibros e ripas não são utilizadas para telha gross" +
+    "a";
             // 
             // frmTelhado
             // 
@@ -584,6 +597,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1063, 610);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.groupBox6);
@@ -672,5 +686,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label lblTelhaGrossa;
         private MetroFramework.Controls.MetroTile metroTile8;
+        private System.Windows.Forms.Label label12;
     }
 }

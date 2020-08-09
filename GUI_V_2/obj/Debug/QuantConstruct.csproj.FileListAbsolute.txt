@@ -70,3 +70,4 @@ C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.csproj.CopyComplete
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.exe
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.pdb
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\Microsoft.ReportViewer.WinForms.dll
