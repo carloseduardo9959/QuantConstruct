@@ -124,5 +124,7 @@ namespace GUI_V_2
             toolTip1.SetToolTip(txtFCK, s);
 
         }
+
+        
     }
 }

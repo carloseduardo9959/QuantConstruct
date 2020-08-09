@@ -208,6 +208,7 @@
             this.txtLarguraTelha.Name = "txtLarguraTelha";
             this.txtLarguraTelha.Size = new System.Drawing.Size(65, 22);
             this.txtLarguraTelha.TabIndex = 5;
+            this.txtLarguraTelha.Text = "1,10";
             // 
             // txtComprimentoTelha
             // 
@@ -216,6 +217,7 @@
             this.txtComprimentoTelha.Name = "txtComprimentoTelha";
             this.txtComprimentoTelha.Size = new System.Drawing.Size(65, 22);
             this.txtComprimentoTelha.TabIndex = 6;
+            this.txtComprimentoTelha.Text = "2,44";
             // 
             // label6
             // 
