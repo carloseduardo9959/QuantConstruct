@@ -34,14 +34,14 @@
             this.txtComprimento = new System.Windows.Forms.TextBox();
             this.txtAltura = new System.Windows.Forms.TextBox();
             this.txtLargura = new System.Windows.Forms.TextBox();
-            this.txtQtdVigas = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtQtd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtLarguraTelha = new System.Windows.Forms.TextBox();
+            this.txtComprimentoTelha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
@@ -56,24 +56,27 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblTelhaGrossa = new System.Windows.Forms.Label();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.lblQtdRipas = new System.Windows.Forms.Label();
+            this.lblQtdCaibros = new System.Windows.Forms.Label();
+            this.lblQtdTerças = new System.Windows.Forms.Label();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.lblTelhaColonial = new System.Windows.Forms.Label();
+            this.lblTelhaRomana = new System.Windows.Forms.Label();
+            this.lblTelhaAmericana = new System.Windows.Forms.Label();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.lblTelhaFrancesa = new System.Windows.Forms.Label();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
             this.lblArea = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
-            this.metroTile7 = new MetroFramework.Controls.MetroTile();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -102,9 +105,9 @@
             this.groupBox1.Controls.Add(this.txtComprimento);
             this.groupBox1.Controls.Add(this.txtAltura);
             this.groupBox1.Controls.Add(this.txtLargura);
-            this.groupBox1.Controls.Add(this.txtQtdVigas);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtQtd);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,17 +120,17 @@
             // 
             // txtComprimento
             // 
-            this.txtComprimento.Location = new System.Drawing.Point(123, 130);
+            this.txtComprimento.Location = new System.Drawing.Point(123, 102);
             this.txtComprimento.Name = "txtComprimento";
             this.txtComprimento.Size = new System.Drawing.Size(65, 22);
-            this.txtComprimento.TabIndex = 4;
+            this.txtComprimento.TabIndex = 3;
             // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(78, 99);
+            this.txtAltura.Location = new System.Drawing.Point(78, 133);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(65, 22);
-            this.txtAltura.TabIndex = 3;
+            this.txtAltura.TabIndex = 4;
             // 
             // txtLargura
             // 
@@ -136,23 +139,13 @@
             this.txtLargura.Size = new System.Drawing.Size(65, 22);
             this.txtLargura.TabIndex = 2;
             // 
-            // txtQtdVigas
+            // txtQtd
             // 
-            this.txtQtdVigas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txtQtdVigas.Location = new System.Drawing.Point(173, 35);
-            this.txtQtdVigas.Name = "txtQtdVigas";
-            this.txtQtdVigas.Size = new System.Drawing.Size(65, 22);
-            this.txtQtdVigas.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Altura (H):";
+            this.txtQtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtQtd.Location = new System.Drawing.Point(173, 35);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(65, 22);
+            this.txtQtd.TabIndex = 1;
             // 
             // label2
             // 
@@ -163,6 +156,16 @@
             this.label2.Size = new System.Drawing.Size(161, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Quantidade de Telhados:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 16);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Altura (H):";
             // 
             // label4
             // 
@@ -178,7 +181,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 133);
+            this.label3.Location = new System.Drawing.Point(6, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 16);
             this.label3.TabIndex = 5;
@@ -186,8 +189,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txtLarguraTelha);
+            this.groupBox2.Controls.Add(this.txtComprimentoTelha);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,21 +201,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dimensões da Telha Grossa";
             // 
-            // textBox7
+            // txtLarguraTelha
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox7.Location = new System.Drawing.Point(57, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(65, 22);
-            this.textBox7.TabIndex = 30;
+            this.txtLarguraTelha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txtLarguraTelha.Location = new System.Drawing.Point(69, 24);
+            this.txtLarguraTelha.Name = "txtLarguraTelha";
+            this.txtLarguraTelha.Size = new System.Drawing.Size(65, 22);
+            this.txtLarguraTelha.TabIndex = 5;
             // 
-            // textBox8
+            // txtComprimentoTelha
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox8.Location = new System.Drawing.Point(103, 57);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(65, 22);
-            this.textBox8.TabIndex = 29;
+            this.txtComprimentoTelha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txtComprimentoTelha.Location = new System.Drawing.Point(103, 57);
+            this.txtComprimentoTelha.Name = "txtComprimentoTelha";
+            this.txtComprimentoTelha.Size = new System.Drawing.Size(65, 22);
+            this.txtComprimentoTelha.TabIndex = 6;
             // 
             // label6
             // 
@@ -220,9 +223,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 16);
+            this.label6.Size = new System.Drawing.Size(57, 16);
             this.label6.TabIndex = 31;
-            this.label6.Text = "Altura:";
+            this.label6.Text = "Largura:";
             // 
             // label7
             // 
@@ -349,49 +352,186 @@
             this.btnCalcular.Location = new System.Drawing.Point(192, 330);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 59;
+            this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Controls.Add(this.label17);
-            this.groupBox6.Controls.Add(this.label16);
+            this.groupBox6.Controls.Add(this.lblTelhaGrossa);
+            this.groupBox6.Controls.Add(this.metroTile8);
+            this.groupBox6.Controls.Add(this.lblQtdRipas);
+            this.groupBox6.Controls.Add(this.lblQtdCaibros);
+            this.groupBox6.Controls.Add(this.lblQtdTerças);
             this.groupBox6.Controls.Add(this.metroTile7);
             this.groupBox6.Controls.Add(this.metroTile6);
             this.groupBox6.Controls.Add(this.metroTile5);
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Controls.Add(this.label12);
+            this.groupBox6.Controls.Add(this.lblTelhaColonial);
+            this.groupBox6.Controls.Add(this.lblTelhaRomana);
+            this.groupBox6.Controls.Add(this.lblTelhaAmericana);
             this.groupBox6.Controls.Add(this.metroTile4);
             this.groupBox6.Controls.Add(this.metroTile3);
             this.groupBox6.Controls.Add(this.metroTile1);
-            this.groupBox6.Controls.Add(this.label15);
+            this.groupBox6.Controls.Add(this.lblTelhaFrancesa);
             this.groupBox6.Controls.Add(this.metroTile2);
             this.groupBox6.Controls.Add(this.metroTile9);
             this.groupBox6.Controls.Add(this.lblArea);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(627, 285);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(298, 275);
+            this.groupBox6.Size = new System.Drawing.Size(298, 313);
             this.groupBox6.TabIndex = 69;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Quantitativos dos materiais:";
             // 
-            // label15
+            // lblTelhaGrossa
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(177, 61);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(15, 16);
-            this.label15.TabIndex = 75;
-            this.label15.Text = "0";
+            this.lblTelhaGrossa.AutoSize = true;
+            this.lblTelhaGrossa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaGrossa.Location = new System.Drawing.Point(177, 62);
+            this.lblTelhaGrossa.Name = "lblTelhaGrossa";
+            this.lblTelhaGrossa.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaGrossa.TabIndex = 88;
+            this.lblTelhaGrossa.Text = "0";
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.Location = new System.Drawing.Point(6, 53);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(165, 25);
+            this.metroTile8.TabIndex = 87;
+            this.metroTile8.Text = "Telha Grossa:";
+            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblQtdRipas
+            // 
+            this.lblQtdRipas.AutoSize = true;
+            this.lblQtdRipas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQtdRipas.Location = new System.Drawing.Point(177, 279);
+            this.lblQtdRipas.Name = "lblQtdRipas";
+            this.lblQtdRipas.Size = new System.Drawing.Size(15, 16);
+            this.lblQtdRipas.TabIndex = 86;
+            this.lblQtdRipas.Text = "0";
+            // 
+            // lblQtdCaibros
+            // 
+            this.lblQtdCaibros.AutoSize = true;
+            this.lblQtdCaibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQtdCaibros.Location = new System.Drawing.Point(177, 248);
+            this.lblQtdCaibros.Name = "lblQtdCaibros";
+            this.lblQtdCaibros.Size = new System.Drawing.Size(15, 16);
+            this.lblQtdCaibros.TabIndex = 85;
+            this.lblQtdCaibros.Text = "0";
+            // 
+            // lblQtdTerças
+            // 
+            this.lblQtdTerças.AutoSize = true;
+            this.lblQtdTerças.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQtdTerças.Location = new System.Drawing.Point(177, 217);
+            this.lblQtdTerças.Name = "lblQtdTerças";
+            this.lblQtdTerças.Size = new System.Drawing.Size(15, 16);
+            this.lblQtdTerças.TabIndex = 82;
+            this.lblQtdTerças.Text = "0";
+            // 
+            // metroTile7
+            // 
+            this.metroTile7.Location = new System.Drawing.Point(6, 270);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(165, 25);
+            this.metroTile7.TabIndex = 84;
+            this.metroTile7.Text = "Qtd de Ripas 1\'\' x 2\'\':";
+            this.metroTile7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile6
+            // 
+            this.metroTile6.Location = new System.Drawing.Point(6, 239);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(165, 25);
+            this.metroTile6.TabIndex = 83;
+            this.metroTile6.Text = "Qtd de Caibros 2\'\' x 4\'\':";
+            this.metroTile6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.BackColor = System.Drawing.Color.Transparent;
+            this.metroTile5.Location = new System.Drawing.Point(6, 208);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(165, 25);
+            this.metroTile5.TabIndex = 82;
+            this.metroTile5.Text = "Qtd de Terças 2\'\'x 6\'\':";
+            this.metroTile5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTelhaColonial
+            // 
+            this.lblTelhaColonial.AutoSize = true;
+            this.lblTelhaColonial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaColonial.Location = new System.Drawing.Point(177, 186);
+            this.lblTelhaColonial.Name = "lblTelhaColonial";
+            this.lblTelhaColonial.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaColonial.TabIndex = 81;
+            this.lblTelhaColonial.Text = "0";
+            // 
+            // lblTelhaRomana
+            // 
+            this.lblTelhaRomana.AutoSize = true;
+            this.lblTelhaRomana.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaRomana.Location = new System.Drawing.Point(177, 155);
+            this.lblTelhaRomana.Name = "lblTelhaRomana";
+            this.lblTelhaRomana.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaRomana.TabIndex = 80;
+            this.lblTelhaRomana.Text = "0";
+            // 
+            // lblTelhaAmericana
+            // 
+            this.lblTelhaAmericana.AutoSize = true;
+            this.lblTelhaAmericana.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaAmericana.Location = new System.Drawing.Point(177, 124);
+            this.lblTelhaAmericana.Name = "lblTelhaAmericana";
+            this.lblTelhaAmericana.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaAmericana.TabIndex = 79;
+            this.lblTelhaAmericana.Text = "0";
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.Location = new System.Drawing.Point(6, 177);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(165, 25);
+            this.metroTile4.TabIndex = 78;
+            this.metroTile4.Text = "Telha Colonial:";
+            this.metroTile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.Location = new System.Drawing.Point(6, 146);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(165, 25);
+            this.metroTile3.TabIndex = 77;
+            this.metroTile3.Text = "Telha Romana:";
+            this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.Location = new System.Drawing.Point(6, 115);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(165, 25);
+            this.metroTile1.TabIndex = 76;
+            this.metroTile1.Text = "Telha Americana:";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTelhaFrancesa
+            // 
+            this.lblTelhaFrancesa.AutoSize = true;
+            this.lblTelhaFrancesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelhaFrancesa.Location = new System.Drawing.Point(177, 93);
+            this.lblTelhaFrancesa.Name = "lblTelhaFrancesa";
+            this.lblTelhaFrancesa.Size = new System.Drawing.Size(15, 16);
+            this.lblTelhaFrancesa.TabIndex = 75;
+            this.lblTelhaFrancesa.Text = "0";
             // 
             // metroTile2
             // 
-            this.metroTile2.Location = new System.Drawing.Point(6, 52);
+            this.metroTile2.Location = new System.Drawing.Point(6, 84);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(165, 25);
             this.metroTile2.TabIndex = 74;
@@ -439,120 +579,17 @@
             this.pictureBox7.TabIndex = 71;
             this.pictureBox7.TabStop = false;
             // 
-            // metroTile1
-            // 
-            this.metroTile1.Location = new System.Drawing.Point(6, 83);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(165, 25);
-            this.metroTile1.TabIndex = 76;
-            this.metroTile1.Text = "Telha Americana:";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.Location = new System.Drawing.Point(6, 114);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(165, 25);
-            this.metroTile3.TabIndex = 77;
-            this.metroTile3.Text = "Telha Romana:";
-            this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroTile4
-            // 
-            this.metroTile4.Location = new System.Drawing.Point(6, 145);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(165, 25);
-            this.metroTile4.TabIndex = 78;
-            this.metroTile4.Text = "Telha Colonial:";
-            this.metroTile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(177, 92);
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(66, 378);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(15, 16);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "0";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(177, 123);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(15, 16);
-            this.label13.TabIndex = 80;
-            this.label13.Text = "0";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(177, 154);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(15, 16);
-            this.label14.TabIndex = 81;
-            this.label14.Text = "0";
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.BackColor = System.Drawing.Color.Transparent;
-            this.metroTile5.Location = new System.Drawing.Point(6, 176);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(165, 25);
-            this.metroTile5.TabIndex = 82;
-            this.metroTile5.Text = "Qtd de Terças 2\'\'x 6\'\':";
-            this.metroTile5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroTile6
-            // 
-            this.metroTile6.Location = new System.Drawing.Point(6, 207);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(165, 25);
-            this.metroTile6.TabIndex = 83;
-            this.metroTile6.Text = "Qtd de Caibros 2\'\' x 4\'\':";
-            this.metroTile6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroTile7
-            // 
-            this.metroTile7.Location = new System.Drawing.Point(6, 238);
-            this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(165, 25);
-            this.metroTile7.TabIndex = 84;
-            this.metroTile7.Text = "Qtd de Ripas 1\'\' x 2\'\':";
-            this.metroTile7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(177, 185);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(15, 16);
-            this.label16.TabIndex = 82;
-            this.label16.Text = "0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(177, 216);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(15, 16);
-            this.label17.TabIndex = 85;
-            this.label17.Text = "0";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(177, 247);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(15, 16);
-            this.label18.TabIndex = 86;
-            this.label18.Text = "0";
+            this.label12.Size = new System.Drawing.Size(497, 16);
+            this.label12.TabIndex = 72;
+            this.label12.Text = "*Obs: A quantidade de terças, caibros e ripas não são utilizadas para telha gross" +
+    "a";
             // 
             // frmTelhado
             // 
@@ -560,6 +597,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1063, 610);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.groupBox6);
@@ -606,14 +644,14 @@
         private System.Windows.Forms.TextBox txtComprimento;
         private System.Windows.Forms.TextBox txtAltura;
         private System.Windows.Forms.TextBox txtLargura;
-        private System.Windows.Forms.TextBox txtQtdVigas;
+        private System.Windows.Forms.TextBox txtQtd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtLarguraTelha;
+        private System.Windows.Forms.TextBox txtComprimentoTelha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btnlogoInicio;
@@ -628,23 +666,26 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblQtdRipas;
+        private System.Windows.Forms.Label lblQtdCaibros;
+        private System.Windows.Forms.Label lblQtdTerças;
         private MetroFramework.Controls.MetroTile metroTile7;
         private MetroFramework.Controls.MetroTile metroTile6;
         private MetroFramework.Controls.MetroTile metroTile5;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTelhaColonial;
+        private System.Windows.Forms.Label lblTelhaRomana;
+        private System.Windows.Forms.Label lblTelhaAmericana;
         private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblTelhaFrancesa;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile9;
         private System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label lblTelhaGrossa;
+        private MetroFramework.Controls.MetroTile metroTile8;
+        private System.Windows.Forms.Label label12;
     }
 }

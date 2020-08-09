@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.submenu = new System.Windows.Forms.Panel();
+            this.btnSub3 = new System.Windows.Forms.Button();
+            this.btnSub2 = new System.Windows.Forms.Button();
+            this.btnSub1 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,14 +55,8 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.btnRelatorios = new System.Windows.Forms.Panel();
-            this.submenu = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnSub1 = new System.Windows.Forms.Button();
-            this.btnSub2 = new System.Windows.Forms.Button();
-            this.btnSub3 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
+            this.submenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
             this.BarraTitulo.SuspendLayout();
@@ -64,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.submenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -87,6 +87,92 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // submenu
+            // 
+            this.submenu.Controls.Add(this.btnSub3);
+            this.submenu.Controls.Add(this.btnSub2);
+            this.submenu.Controls.Add(this.btnSub1);
+            this.submenu.Controls.Add(this.panel11);
+            this.submenu.Controls.Add(this.panel10);
+            this.submenu.Controls.Add(this.panel9);
+            this.submenu.Location = new System.Drawing.Point(51, 418);
+            this.submenu.Name = "submenu";
+            this.submenu.Size = new System.Drawing.Size(179, 100);
+            this.submenu.TabIndex = 16;
+            this.submenu.Visible = false;
+            // 
+            // btnSub3
+            // 
+            this.btnSub3.FlatAppearance.BorderSize = 0;
+            this.btnSub3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnSub3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSub3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSub3.ForeColor = System.Drawing.Color.White;
+            this.btnSub3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSub3.Location = new System.Drawing.Point(11, 69);
+            this.btnSub3.Name = "btnSub3";
+            this.btnSub3.Size = new System.Drawing.Size(165, 27);
+            this.btnSub3.TabIndex = 20;
+            this.btnSub3.Text = "Relatórios";
+            this.btnSub3.UseVisualStyleBackColor = true;
+            this.btnSub3.Click += new System.EventHandler(this.btnSub3_Click);
+            // 
+            // btnSub2
+            // 
+            this.btnSub2.FlatAppearance.BorderSize = 0;
+            this.btnSub2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnSub2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSub2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSub2.ForeColor = System.Drawing.Color.White;
+            this.btnSub2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSub2.Location = new System.Drawing.Point(11, 35);
+            this.btnSub2.Name = "btnSub2";
+            this.btnSub2.Size = new System.Drawing.Size(165, 27);
+            this.btnSub2.TabIndex = 19;
+            this.btnSub2.Text = "Relatórios";
+            this.btnSub2.UseVisualStyleBackColor = true;
+            this.btnSub2.Click += new System.EventHandler(this.btnSub2_Click);
+            // 
+            // btnSub1
+            // 
+            this.btnSub1.FlatAppearance.BorderSize = 0;
+            this.btnSub1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnSub1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSub1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSub1.ForeColor = System.Drawing.Color.White;
+            this.btnSub1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSub1.Location = new System.Drawing.Point(11, 1);
+            this.btnSub1.Name = "btnSub1";
+            this.btnSub1.Size = new System.Drawing.Size(165, 27);
+            this.btnSub1.TabIndex = 18;
+            this.btnSub1.Text = "Relatórios";
+            this.btnSub1.UseVisualStyleBackColor = true;
+            this.btnSub1.Click += new System.EventHandler(this.btnSub1_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(0, 68);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(5, 28);
+            this.panel11.TabIndex = 19;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Location = new System.Drawing.Point(0, 34);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(5, 28);
+            this.panel10.TabIndex = 19;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(5, 28);
+            this.panel9.TabIndex = 17;
             // 
             // lblcorreo
             // 
@@ -144,7 +230,7 @@
             this.btnRelat.ForeColor = System.Drawing.Color.White;
             this.btnRelat.Image = ((System.Drawing.Image)(resources.GetObject("btnRelat.Image")));
             this.btnRelat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelat.Location = new System.Drawing.Point(0, 356);
+            this.btnRelat.Location = new System.Drawing.Point(0, 372);
             this.btnRelat.Name = "btnRelat";
             this.btnRelat.Size = new System.Drawing.Size(250, 40);
             this.btnRelat.TabIndex = 6;
@@ -161,7 +247,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 310);
+            this.button5.Location = new System.Drawing.Point(0, 326);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(250, 40);
             this.button5.TabIndex = 5;
@@ -177,7 +263,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 264);
+            this.button4.Location = new System.Drawing.Point(0, 280);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(250, 40);
             this.button4.TabIndex = 4;
@@ -193,7 +279,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 218);
+            this.button3.Location = new System.Drawing.Point(0, 234);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(250, 40);
             this.button3.TabIndex = 3;
@@ -209,7 +295,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 172);
+            this.button2.Location = new System.Drawing.Point(0, 188);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(250, 40);
             this.button2.TabIndex = 2;
@@ -225,7 +311,7 @@
             this.btnprod.ForeColor = System.Drawing.Color.White;
             this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
             this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(0, 126);
+            this.btnprod.Location = new System.Drawing.Point(0, 142);
             this.btnprod.Name = "btnprod";
             this.btnprod.Size = new System.Drawing.Size(250, 40);
             this.btnprod.TabIndex = 1;
@@ -334,92 +420,6 @@
             this.btnRelatorios.Size = new System.Drawing.Size(1050, 605);
             this.btnRelatorios.TabIndex = 2;
             // 
-            // submenu
-            // 
-            this.submenu.Controls.Add(this.btnSub3);
-            this.submenu.Controls.Add(this.btnSub2);
-            this.submenu.Controls.Add(this.btnSub1);
-            this.submenu.Controls.Add(this.panel11);
-            this.submenu.Controls.Add(this.panel10);
-            this.submenu.Controls.Add(this.panel9);
-            this.submenu.Location = new System.Drawing.Point(51, 402);
-            this.submenu.Name = "submenu";
-            this.submenu.Size = new System.Drawing.Size(179, 100);
-            this.submenu.TabIndex = 16;
-            this.submenu.Visible = false;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(0, 68);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(5, 28);
-            this.panel11.TabIndex = 19;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(0, 34);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 28);
-            this.panel10.TabIndex = 19;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 28);
-            this.panel9.TabIndex = 17;
-            // 
-            // btnSub1
-            // 
-            this.btnSub1.FlatAppearance.BorderSize = 0;
-            this.btnSub1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSub1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSub1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSub1.ForeColor = System.Drawing.Color.White;
-            this.btnSub1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSub1.Location = new System.Drawing.Point(11, 1);
-            this.btnSub1.Name = "btnSub1";
-            this.btnSub1.Size = new System.Drawing.Size(165, 27);
-            this.btnSub1.TabIndex = 18;
-            this.btnSub1.Text = "Relatórios";
-            this.btnSub1.UseVisualStyleBackColor = true;
-            this.btnSub1.Click += new System.EventHandler(this.btnSub1_Click);
-            // 
-            // btnSub2
-            // 
-            this.btnSub2.FlatAppearance.BorderSize = 0;
-            this.btnSub2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSub2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSub2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSub2.ForeColor = System.Drawing.Color.White;
-            this.btnSub2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSub2.Location = new System.Drawing.Point(11, 35);
-            this.btnSub2.Name = "btnSub2";
-            this.btnSub2.Size = new System.Drawing.Size(165, 27);
-            this.btnSub2.TabIndex = 19;
-            this.btnSub2.Text = "Relatórios";
-            this.btnSub2.UseVisualStyleBackColor = true;
-            this.btnSub2.Click += new System.EventHandler(this.btnSub2_Click);
-            // 
-            // btnSub3
-            // 
-            this.btnSub3.FlatAppearance.BorderSize = 0;
-            this.btnSub3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSub3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSub3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSub3.ForeColor = System.Drawing.Color.White;
-            this.btnSub3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSub3.Location = new System.Drawing.Point(11, 69);
-            this.btnSub3.Name = "btnSub3";
-            this.btnSub3.Size = new System.Drawing.Size(165, 27);
-            this.btnSub3.TabIndex = 20;
-            this.btnSub3.Text = "Relatórios";
-            this.btnSub3.UseVisualStyleBackColor = true;
-            this.btnSub3.Click += new System.EventHandler(this.btnSub3_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,6 +435,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
+            this.submenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
@@ -443,7 +444,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.submenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
