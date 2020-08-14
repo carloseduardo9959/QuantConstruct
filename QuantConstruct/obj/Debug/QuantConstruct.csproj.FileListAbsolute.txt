@@ -45,9 +45,6 @@ C:\Users\Carlos\Desktop\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.pdb
 C:\Users\Carlos\Desktop\QuantConstruct\GUI_V_2\bin\Debug\MetroFramework.dll
 C:\Users\Carlos\Desktop\QuantConstruct\GUI_V_2\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Carlos\Desktop\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.csproj.CopyComplete
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\GUI_V_2.exe.config
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\GUI_V_2.exe
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\GUI_V_2.pdb
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\MetroFramework.dll
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.csprojAssemblyReference.cache
@@ -65,9 +62,12 @@ C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.frmPri
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.frmVigas.resources
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.InicioResumen.resources
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.btnChapisco.resources
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.Properties.Resources.resources
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.csproj.GenerateResource.cache
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.csproj.CopyComplete
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.exe
-C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.pdb
 C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\QuantConstruct.exe.config
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\QuantConstruct.exe
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\bin\Debug\QuantConstruct.pdb
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.exe
+C:\Users\Carlos\Documents\GitHub\QuantConstruct\GUI_V_2\obj\Debug\QuantConstruct.pdb
