@@ -117,44 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tijolo_b10201" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b10201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconLimpar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconAddCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icones\iconAddCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconExcluirCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconExcluirCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b10291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b10291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b15291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b15291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_c5201" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_c5201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b12291" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b12291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b15391" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b15391.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b10191" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b10191.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tijolo_b1214241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tijolo_b1214241.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconConsultarpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconConsultarpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

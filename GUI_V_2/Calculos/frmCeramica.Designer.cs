@@ -38,21 +38,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblRejunte = new System.Windows.Forms.Label();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile9 = new MetroFramework.Controls.MetroTile();
             this.lblArea = new System.Windows.Forms.Label();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.lblArgamassa = new System.Windows.Forms.Label();
-            this.metroTile9 = new MetroFramework.Controls.MetroTile();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.lblRejunte = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -159,6 +159,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dimensões da Ceramica";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(77, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(65, 22);
+            this.textBox1.TabIndex = 61;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 16);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "Altura (A):";
+            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -211,23 +228,6 @@
             this.label9.TabIndex = 33;
             this.label9.Text = "Largura (L):";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 16);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Altura (A):";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(77, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(65, 22);
-            this.textBox1.TabIndex = 61;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lblRejunte);
@@ -243,6 +243,34 @@
             this.groupBox3.TabIndex = 67;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resultado";
+            // 
+            // lblRejunte
+            // 
+            this.lblRejunte.AutoSize = true;
+            this.lblRejunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRejunte.Location = new System.Drawing.Point(177, 103);
+            this.lblRejunte.Name = "lblRejunte";
+            this.lblRejunte.Size = new System.Drawing.Size(15, 16);
+            this.lblRejunte.TabIndex = 73;
+            this.lblRejunte.Text = "0";
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.Location = new System.Drawing.Point(6, 94);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(165, 25);
+            this.metroTile1.TabIndex = 72;
+            this.metroTile1.Text = "Rejunte (Kg):";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroTile9
+            // 
+            this.metroTile9.Location = new System.Drawing.Point(6, 32);
+            this.metroTile9.Name = "metroTile9";
+            this.metroTile9.Size = new System.Drawing.Size(165, 25);
+            this.metroTile9.TabIndex = 71;
+            this.metroTile9.Text = "Área do Piso (m2):";
+            this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblArea
             // 
@@ -272,34 +300,6 @@
             this.lblArgamassa.Size = new System.Drawing.Size(15, 16);
             this.lblArgamassa.TabIndex = 27;
             this.lblArgamassa.Text = "0";
-            // 
-            // metroTile9
-            // 
-            this.metroTile9.Location = new System.Drawing.Point(6, 32);
-            this.metroTile9.Name = "metroTile9";
-            this.metroTile9.Size = new System.Drawing.Size(165, 25);
-            this.metroTile9.TabIndex = 71;
-            this.metroTile9.Text = "Área do Piso (m2):";
-            this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.Location = new System.Drawing.Point(6, 94);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(165, 25);
-            this.metroTile1.TabIndex = 72;
-            this.metroTile1.Text = "Rejunte (Kg):";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblRejunte
-            // 
-            this.lblRejunte.AutoSize = true;
-            this.lblRejunte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRejunte.Location = new System.Drawing.Point(177, 103);
-            this.lblRejunte.Name = "lblRejunte";
-            this.lblRejunte.Size = new System.Drawing.Size(15, 16);
-            this.lblRejunte.TabIndex = 73;
-            this.lblRejunte.Text = "0";
             // 
             // btnCalcular
             // 
@@ -345,7 +345,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1050, 610);
+            this.ClientSize = new System.Drawing.Size(1053, 610);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnlogoInicio);

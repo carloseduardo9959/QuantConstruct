@@ -114,6 +114,13 @@
     <Compile Include="Calculos\frmTijolos.Designer.cs">
       <DependentUpon>frmTijolos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="frmCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroCliente.Designer.cs">
+      <DependentUpon>frmCadastroCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +177,9 @@
     <EmbeddedResource Include="Calculos\frmTijolos.resx">
       <DependentUpon>frmTijolos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroCliente.resx">
+      <DependentUpon>frmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +218,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\iconConsultarpng.png" />
+    <None Include="Resources\iconLimpar.png" />
+    <None Include="Resources\iconExcluirCliente.png" />
+    <None Include="Resources\Save-icon.png" />
+    <None Include="Resources\icones\iconAddCliente.png" />
     <None Include="Resources\tijolo_c5201.jpg" />
     <None Include="Resources\tijolo_b1214241.jpg" />
     <None Include="Resources\tijolo_b15391.jpg" />
@@ -217,6 +232,7 @@
     <None Include="Resources\tijolo_b10201.jpg" />
     <None Include="Resources\tijolo_b10191.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

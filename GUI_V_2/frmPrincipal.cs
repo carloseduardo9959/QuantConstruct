@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,8 +19,6 @@ namespace GUI_V_2
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
         }
-
-      
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -117,6 +113,11 @@ namespace GUI_V_2
         private void btnSub3_Click(object sender, EventArgs e)
         {
             submenu.Visible = false;
+        }
+
+        private void cmdClientes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
