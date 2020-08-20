@@ -65,7 +65,7 @@ namespace GUI_V_2
             SendMessage(this.Handle,0x112,0xf012,0);
         }
 
-        private void AbrirFormEnPanel(object Formhijo)
+        public void AbrirFormEnPanel(object Formhijo)
         {
             if (this.btnRelatorios.Controls.Count > 0)
                 this.btnRelatorios.Controls.RemoveAt(0);
@@ -117,7 +117,7 @@ namespace GUI_V_2
 
         private void cmdClientes_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new frmClientes());
         }
     }
 }

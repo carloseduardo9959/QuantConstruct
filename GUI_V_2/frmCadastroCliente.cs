@@ -17,7 +17,7 @@ namespace GUI_V_2
             InitializeComponent();
         }
         Cliente cliente = new Cliente();
-        private string status = "Navegando";
+        public string status = "Navegando";
 
         private void HabilitarControles()
         {
@@ -61,6 +61,7 @@ namespace GUI_V_2
 
         private void LimpaControle()
         {
+            txtCodigo.Clear();
             txtNome.Clear();
             txtEmail.Clear();
             txtCpfCnpj.Clear();
@@ -81,7 +82,6 @@ namespace GUI_V_2
 
         private void frmCadastroCliente_Load(object sender, EventArgs e)
         {
-            status = "Navegando";
             HabilitarControles();
 
             toolTip1.SetToolTip(cmdNovo, "Cadastrar novo cliente");
@@ -184,6 +184,35 @@ namespace GUI_V_2
         private void cmdConsultar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public virtual void AlterarRegistro(int ID)
+        {
+            cliente.IdCliente = ID;
+            cliente.ConsultarCliente();
+            txtCodigo.Text = cliente.IdCliente.ToString();
+            txtNome.Text = cliente.Nome_Cliente;
+            if((cliente.CPF_Cliente != "") || (cliente.RG_Cliente != ""))
+            {
+                rdbPessoaFisica.Checked = true;
+                rdbPessoaJuridica.Checked = false;
+                txtCpfCnpj.Text = cliente.CPF_Cliente;
+                txtRgIe.Text = cliente.RG_Cliente;
+            }
+            else if ((cliente.CNPJ_Cliente != "") || (cliente.InscEst_Cliente != ""))
+            {
+                rdbPessoaFisica.Checked = false;
+                rdbPessoaJuridica.Checked = true;
+                txtCpfCnpj.Text = cliente.CPF_Cliente;
+                txtRgIe.Text = cliente.RG_Cliente;
+            }
+            txtTelefone.Text = cliente.Tel_Cliente;
+            txtEmail.Text = cliente.Email_Cliente;
+            txtRua.Text = cliente.Rua_Cliente;
+            txtNumero.Text = cliente.Num_Cliente;
+            txtBairro.Text = cliente.Bairro_Cliente;
+            txtCidade.Text = cliente.Cidade_Cliente;
+            txtCEP.Text = cliente.CEP_Cliente;
         }
     }
 }

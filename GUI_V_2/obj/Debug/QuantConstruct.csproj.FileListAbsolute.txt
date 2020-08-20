@@ -72,3 +72,4 @@ C:\Users\dhyog\source\repos\Quant_Construct\QuantConstruct\GUI_V_2\obj\Debug\Qua
 C:\Users\dhyog\source\repos\Quant_Construct\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.exe
 C:\Users\dhyog\source\repos\Quant_Construct\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.pdb
 C:\Users\dhyog\source\repos\Quant_Construct\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.frmCadastroCliente.resources
+C:\Users\dhyog\source\repos\Quant_Construct\QuantConstruct\GUI_V_2\obj\Debug\GUI_V_2.frmClientes.resources

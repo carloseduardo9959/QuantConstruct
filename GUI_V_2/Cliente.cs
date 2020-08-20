@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using Microsoft.SqlServer;
+using System.Data;
 
 namespace GUI_V_2
 {
@@ -142,6 +143,34 @@ namespace GUI_V_2
             int Id = (int)com.ExecuteScalar();
             cn.Close();
             return Id;
+        }
+
+        public DataSet ListarClientes(int flag)
+        {
+            Conectar();
+            string sql = "";
+            if(flag == 0)
+            {
+                sql = $"Select * from Cliente where Nome_Cliente Like '{Nome_Cliente}%'";
+            }
+            else if (flag == 1)
+            {
+                sql = $"Select * from Cliente where CPF_Cliente Like '{CPF_Cliente}%'";
+            }
+            else if (flag == 2)
+            {
+                sql = $"Select * from Cliente where CNPJ_Cliente Like '{CNPJ_Cliente}%'";
+            }
+            else if (flag == 3)
+            {
+                sql = $"Select * from Cliente where CEP_Cliente Like '{CEP_Cliente}%'";
+            }
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql,cn);
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+            cn.Close();
+            return dataSet;
+
         }
 
     }
