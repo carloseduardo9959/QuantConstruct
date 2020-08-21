@@ -32,9 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnVigas = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnPilares = new System.Windows.Forms.Button();
             this.btnTijolo = new System.Windows.Forms.Button();
             this.btnTelhado = new System.Windows.Forms.Button();
@@ -67,9 +64,9 @@
             this.btnVigas.ForeColor = System.Drawing.Color.White;
             this.btnVigas.Image = ((System.Drawing.Image)(resources.GetObject("btnVigas.Image")));
             this.btnVigas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVigas.Location = new System.Drawing.Point(138, 80);
+            this.btnVigas.Location = new System.Drawing.Point(86, 67);
             this.btnVigas.Name = "btnVigas";
-            this.btnVigas.Size = new System.Drawing.Size(187, 48);
+            this.btnVigas.Size = new System.Drawing.Size(205, 63);
             this.btnVigas.TabIndex = 2;
             this.btnVigas.Text = "Vigas";
             this.btnVigas.UseVisualStyleBackColor = false;
@@ -90,30 +87,6 @@
             this.btnCerrar.Text = "X";
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(414, 304);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 24);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(414, 346);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 24);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(414, 385);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 24);
-            this.textBox3.TabIndex = 6;
-            // 
             // btnPilares
             // 
             this.btnPilares.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -124,9 +97,9 @@
             this.btnPilares.ForeColor = System.Drawing.Color.White;
             this.btnPilares.Image = ((System.Drawing.Image)(resources.GetObject("btnPilares.Image")));
             this.btnPilares.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPilares.Location = new System.Drawing.Point(331, 80);
+            this.btnPilares.Location = new System.Drawing.Point(297, 67);
             this.btnPilares.Name = "btnPilares";
-            this.btnPilares.Size = new System.Drawing.Size(187, 48);
+            this.btnPilares.Size = new System.Drawing.Size(207, 63);
             this.btnPilares.TabIndex = 7;
             this.btnPilares.Text = "Pilares";
             this.btnPilares.UseVisualStyleBackColor = false;
@@ -142,9 +115,9 @@
             this.btnTijolo.ForeColor = System.Drawing.Color.White;
             this.btnTijolo.Image = ((System.Drawing.Image)(resources.GetObject("btnTijolo.Image")));
             this.btnTijolo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTijolo.Location = new System.Drawing.Point(331, 138);
+            this.btnTijolo.Location = new System.Drawing.Point(297, 136);
             this.btnTijolo.Name = "btnTijolo";
-            this.btnTijolo.Size = new System.Drawing.Size(187, 48);
+            this.btnTijolo.Size = new System.Drawing.Size(207, 62);
             this.btnTijolo.TabIndex = 8;
             this.btnTijolo.Text = "Tijolos";
             this.btnTijolo.UseVisualStyleBackColor = false;
@@ -160,9 +133,9 @@
             this.btnTelhado.ForeColor = System.Drawing.Color.White;
             this.btnTelhado.Image = ((System.Drawing.Image)(resources.GetObject("btnTelhado.Image")));
             this.btnTelhado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTelhado.Location = new System.Drawing.Point(527, 192);
+            this.btnTelhado.Location = new System.Drawing.Point(510, 204);
             this.btnTelhado.Name = "btnTelhado";
-            this.btnTelhado.Size = new System.Drawing.Size(187, 48);
+            this.btnTelhado.Size = new System.Drawing.Size(207, 62);
             this.btnTelhado.TabIndex = 9;
             this.btnTelhado.Text = "Telhado";
             this.btnTelhado.UseVisualStyleBackColor = false;
@@ -178,9 +151,9 @@
             this.btnLaje.ForeColor = System.Drawing.Color.White;
             this.btnLaje.Image = ((System.Drawing.Image)(resources.GetObject("btnLaje.Image")));
             this.btnLaje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLaje.Location = new System.Drawing.Point(527, 80);
+            this.btnLaje.Location = new System.Drawing.Point(510, 67);
             this.btnLaje.Name = "btnLaje";
-            this.btnLaje.Size = new System.Drawing.Size(187, 48);
+            this.btnLaje.Size = new System.Drawing.Size(207, 63);
             this.btnLaje.TabIndex = 13;
             this.btnLaje.Text = "Laje";
             this.btnLaje.UseVisualStyleBackColor = false;
@@ -196,9 +169,9 @@
             this.btnPiso.ForeColor = System.Drawing.Color.White;
             this.btnPiso.Image = ((System.Drawing.Image)(resources.GetObject("btnPiso.Image")));
             this.btnPiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPiso.Location = new System.Drawing.Point(527, 138);
+            this.btnPiso.Location = new System.Drawing.Point(510, 136);
             this.btnPiso.Name = "btnPiso";
-            this.btnPiso.Size = new System.Drawing.Size(187, 48);
+            this.btnPiso.Size = new System.Drawing.Size(207, 62);
             this.btnPiso.TabIndex = 11;
             this.btnPiso.Text = "Piso";
             this.btnPiso.UseVisualStyleBackColor = false;
@@ -214,9 +187,9 @@
             this.btnReboco.ForeColor = System.Drawing.Color.White;
             this.btnReboco.Image = ((System.Drawing.Image)(resources.GetObject("btnReboco.Image")));
             this.btnReboco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReboco.Location = new System.Drawing.Point(138, 138);
+            this.btnReboco.Location = new System.Drawing.Point(86, 136);
             this.btnReboco.Name = "btnReboco";
-            this.btnReboco.Size = new System.Drawing.Size(187, 48);
+            this.btnReboco.Size = new System.Drawing.Size(205, 62);
             this.btnReboco.TabIndex = 10;
             this.btnReboco.Text = "Reboco";
             this.btnReboco.UseVisualStyleBackColor = false;
@@ -232,9 +205,9 @@
             this.btnCeramica.ForeColor = System.Drawing.Color.White;
             this.btnCeramica.Image = ((System.Drawing.Image)(resources.GetObject("btnCeramica.Image")));
             this.btnCeramica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCeramica.Location = new System.Drawing.Point(138, 192);
+            this.btnCeramica.Location = new System.Drawing.Point(86, 204);
             this.btnCeramica.Name = "btnCeramica";
-            this.btnCeramica.Size = new System.Drawing.Size(187, 48);
+            this.btnCeramica.Size = new System.Drawing.Size(205, 62);
             this.btnCeramica.TabIndex = 17;
             this.btnCeramica.Text = "Ceramica";
             this.btnCeramica.UseVisualStyleBackColor = false;
@@ -250,9 +223,9 @@
             this.btnPintura.ForeColor = System.Drawing.Color.White;
             this.btnPintura.Image = ((System.Drawing.Image)(resources.GetObject("btnPintura.Image")));
             this.btnPintura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPintura.Location = new System.Drawing.Point(331, 192);
+            this.btnPintura.Location = new System.Drawing.Point(297, 204);
             this.btnPintura.Name = "btnPintura";
-            this.btnPintura.Size = new System.Drawing.Size(187, 48);
+            this.btnPintura.Size = new System.Drawing.Size(207, 62);
             this.btnPintura.TabIndex = 16;
             this.btnPintura.Text = "Pintura";
             this.btnPintura.UseVisualStyleBackColor = false;
@@ -268,9 +241,9 @@
             this.btnContraPiso.ForeColor = System.Drawing.Color.White;
             this.btnContraPiso.Image = ((System.Drawing.Image)(resources.GetObject("btnContraPiso.Image")));
             this.btnContraPiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContraPiso.Location = new System.Drawing.Point(720, 138);
+            this.btnContraPiso.Location = new System.Drawing.Point(723, 136);
             this.btnContraPiso.Name = "btnContraPiso";
-            this.btnContraPiso.Size = new System.Drawing.Size(187, 48);
+            this.btnContraPiso.Size = new System.Drawing.Size(209, 62);
             this.btnContraPiso.TabIndex = 15;
             this.btnContraPiso.Text = "ContraPiso";
             this.btnContraPiso.UseVisualStyleBackColor = false;
@@ -286,9 +259,9 @@
             this.btnChapiscos.ForeColor = System.Drawing.Color.White;
             this.btnChapiscos.Image = ((System.Drawing.Image)(resources.GetObject("btnChapiscos.Image")));
             this.btnChapiscos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChapiscos.Location = new System.Drawing.Point(720, 80);
+            this.btnChapiscos.Location = new System.Drawing.Point(723, 67);
             this.btnChapiscos.Name = "btnChapiscos";
-            this.btnChapiscos.Size = new System.Drawing.Size(187, 48);
+            this.btnChapiscos.Size = new System.Drawing.Size(209, 63);
             this.btnChapiscos.TabIndex = 14;
             this.btnChapiscos.Text = "Chapisco";
             this.btnChapiscos.UseVisualStyleBackColor = false;
@@ -310,9 +283,6 @@
             this.Controls.Add(this.btnTelhado);
             this.Controls.Add(this.btnTijolo);
             this.Controls.Add(this.btnPilares);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnVigas);
             this.Controls.Add(this.label1);
@@ -329,9 +299,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnVigas;
         private System.Windows.Forms.Label btnCerrar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnPilares;
         private System.Windows.Forms.Button btnTijolo;
         private System.Windows.Forms.Button btnTelhado;

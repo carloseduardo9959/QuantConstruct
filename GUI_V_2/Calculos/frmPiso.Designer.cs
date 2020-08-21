@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtQtdLado = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
             this.txtEspessura = new System.Windows.Forms.TextBox();
             this.txtComprimento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblAgua = new System.Windows.Forms.Label();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.lblBritalt = new System.Windows.Forms.Label();
             this.lblAreialt = new System.Windows.Forms.Label();
@@ -62,9 +62,9 @@
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTbrita = new System.Windows.Forms.TextBox();
+            this.txtTareia = new System.Windows.Forms.TextBox();
+            this.txtTcimento = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -90,13 +90,14 @@
             this.btnCalcular.Location = new System.Drawing.Point(206, 521);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 59;
+            this.btnCalcular.TabIndex = 8;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtQtdLado);
+            this.groupBox1.Controls.Add(this.txtQtd);
             this.groupBox1.Controls.Add(this.txtEspessura);
             this.groupBox1.Controls.Add(this.txtComprimento);
             this.groupBox1.Controls.Add(this.label2);
@@ -112,27 +113,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Levantamento de Quantidades";
             // 
-            // txtQtdLado
+            // txtQtd
             // 
-            this.txtQtdLado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txtQtdLado.Location = new System.Drawing.Point(93, 34);
-            this.txtQtdLado.Name = "txtQtdLado";
-            this.txtQtdLado.Size = new System.Drawing.Size(65, 22);
-            this.txtQtdLado.TabIndex = 1;
+            this.txtQtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtQtd.Location = new System.Drawing.Point(93, 34);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(65, 22);
+            this.txtQtd.TabIndex = 1;
             // 
             // txtEspessura
             // 
+            this.txtEspessura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtEspessura.ForeColor = System.Drawing.Color.Black;
             this.txtEspessura.Location = new System.Drawing.Point(108, 125);
             this.txtEspessura.Name = "txtEspessura";
             this.txtEspessura.Size = new System.Drawing.Size(65, 22);
-            this.txtEspessura.TabIndex = 28;
+            this.txtEspessura.TabIndex = 4;
+            this.txtEspessura.Text = "0,05";
             // 
             // txtComprimento
             // 
             this.txtComprimento.Location = new System.Drawing.Point(123, 92);
             this.txtComprimento.Name = "txtComprimento";
             this.txtComprimento.Size = new System.Drawing.Size(65, 22);
-            this.txtComprimento.TabIndex = 30;
+            this.txtComprimento.TabIndex = 3;
             // 
             // label2
             // 
@@ -149,7 +153,7 @@
             this.txtLargura.Location = new System.Drawing.Point(87, 62);
             this.txtLargura.Name = "txtLargura";
             this.txtLargura.Size = new System.Drawing.Size(65, 22);
-            this.txtLargura.TabIndex = 29;
+            this.txtLargura.TabIndex = 2;
             // 
             // label3
             // 
@@ -224,7 +228,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblArea);
-            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.lblAgua);
             this.groupBox2.Controls.Add(this.lblConcreto);
             this.groupBox2.Controls.Add(this.metroTile8);
             this.groupBox2.Controls.Add(this.label16);
@@ -249,14 +253,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultado";
             // 
-            // label17
+            // lblAgua
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(120, 248);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(15, 16);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "0";
+            this.lblAgua.AutoSize = true;
+            this.lblAgua.Location = new System.Drawing.Point(120, 248);
+            this.lblAgua.Name = "lblAgua";
+            this.lblAgua.Size = new System.Drawing.Size(15, 16);
+            this.lblAgua.TabIndex = 35;
+            this.lblAgua.Text = "0";
             // 
             // metroTile8
             // 
@@ -404,9 +408,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtTbrita);
+            this.groupBox3.Controls.Add(this.txtTareia);
+            this.groupBox3.Controls.Add(this.txtTcimento);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label9);
@@ -418,32 +422,32 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Traço do Concreto";
             // 
-            // textBox2
+            // txtTbrita
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox2.Location = new System.Drawing.Point(72, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(65, 22);
-            this.textBox2.TabIndex = 28;
-            this.textBox2.Text = "6";
+            this.txtTbrita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txtTbrita.Location = new System.Drawing.Point(72, 97);
+            this.txtTbrita.Name = "txtTbrita";
+            this.txtTbrita.Size = new System.Drawing.Size(65, 22);
+            this.txtTbrita.TabIndex = 7;
+            this.txtTbrita.Text = "6";
             // 
-            // textBox3
+            // txtTareia
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox3.Location = new System.Drawing.Point(72, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(65, 22);
-            this.textBox3.TabIndex = 30;
-            this.textBox3.Text = "4";
+            this.txtTareia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txtTareia.Location = new System.Drawing.Point(72, 61);
+            this.txtTareia.Name = "txtTareia";
+            this.txtTareia.Size = new System.Drawing.Size(65, 22);
+            this.txtTareia.TabIndex = 6;
+            this.txtTareia.Text = "4";
             // 
-            // textBox4
+            // txtTcimento
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox4.Location = new System.Drawing.Point(72, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(65, 22);
-            this.textBox4.TabIndex = 29;
-            this.textBox4.Text = "1";
+            this.txtTcimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txtTcimento.Location = new System.Drawing.Point(72, 31);
+            this.txtTcimento.Name = "txtTcimento";
+            this.txtTcimento.Size = new System.Drawing.Size(65, 22);
+            this.txtTcimento.TabIndex = 5;
+            this.txtTcimento.Text = "1";
             // 
             // label7
             // 
@@ -509,8 +513,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtQtdLado;
-        private System.Windows.Forms.TextBox txtEspessura;
+        private System.Windows.Forms.TextBox txtQtd;
         private System.Windows.Forms.TextBox txtComprimento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtLargura;
@@ -522,7 +525,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblAgua;
         private MetroFramework.Controls.MetroTile metroTile8;
         private System.Windows.Forms.Label lblBritalt;
         private System.Windows.Forms.Label lblAreialt;
@@ -539,11 +542,12 @@
         private System.Windows.Forms.PictureBox btnlogoInicio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTbrita;
+        private System.Windows.Forms.TextBox txtTareia;
+        private System.Windows.Forms.TextBox txtTcimento;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtEspessura;
     }
 }

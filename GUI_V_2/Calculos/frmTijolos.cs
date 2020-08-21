@@ -72,5 +72,101 @@ namespace GUI_V_2.Calculos
 
             }
         }
+
+        private void frmTijolos_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedItem = "Não";
+            comboBox2.SelectedItem = "Não";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.ToString() == "Não")
+            {
+                txtQtdJanelas.Enabled = false;
+                txtBaseJanela.Enabled = false;
+                txtAlturaJanela.Enabled = false;
+            }
+            else
+            {
+                txtQtdJanelas.Enabled = true;
+                txtBaseJanela.Enabled = true;
+                txtAlturaJanela.Enabled = true;
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem.ToString() == "Não")
+            {
+                txtQtdPorta.Enabled = false;
+                txtBasePorta.Enabled = false;
+                txtAlturaPorta.Enabled = false;
+            }
+            else
+            {
+                txtQtdPorta.Enabled = true;
+                txtBasePorta.Enabled = true;
+                txtAlturaPorta.Enabled = true;
+            }
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double areaJanela = 0, areaPorta = 0;
+            //Janela
+            if (comboBox1.SelectedItem.ToString() == "Não")
+                areaJanela = 0;
+            else
+            {
+                areaJanela = (double.Parse(txtQtdJanelas.Text) * double.Parse(txtBaseJanela.Text) * double.Parse(txtAlturaJanela.Text));
+            }
+
+            //Porta
+            if (comboBox2.SelectedItem.ToString() == "Não")
+                areaPorta = 0;
+            else
+            {
+                areaPorta = (double.Parse(txtQtdPorta.Text) * double.Parse(txtBasePorta.Text) * double.Parse(txtAlturaPorta.Text));
+            }
+
+            double area = 0;
+            double parede = double.Parse(txtComprimento.Text) * double.Parse(txtAltura.Text) * double.Parse(txtQtdParedes.Text);
+            if (int.Parse(txtQtdParedes.Text) > 0)
+            {
+                area = (parede - (areaJanela + areaPorta));
+            }
+            else area = 0;
+
+            lblArea.Text = area.ToString("0.00");
+
+         
+            double qtdTijolo;
+            if (int.Parse(txtJunta.Text) > 0)
+            {
+                qtdTijolo = (area / (((double.Parse(txtComprimentoTijolo.Text) + double.Parse(txtJunta.Text) / 10) / 100) * ((double.Parse(txtAlturaTijolo.Text) + double.Parse(txtJunta.Text) / 10) / 100))) * (1.07);
+            }
+            else qtdTijolo = 0;
+
+            lblQtdTijolos.Text = qtdTijolo.ToString("0");
+
+            double volume;
+            volume = (((double.Parse(txtLarguraTijolo.Text) / 100) * ((double.Parse(txtAlturaTijolo.Text) / 100) + (double.Parse(txtComprimentoTijolo.Text) / 100))) * (double.Parse(txtJunta.Text) / 1000)) * (int)qtdTijolo;
+            lblVolume.Text = volume.ToString("0.00");
+
+            double cimento = volume / (0.1 * (50 / 21.6));
+            double areiaLT = cimento * 6 * (50 / 21.6);
+            double areiaMT = areiaLT * 0.018;
+            double aguaLT = cimento * 1.555 * (50 / 21.6);
+            double aguaLitro = aguaLT * 18;
+            double aditivo = (cimento * 115.7407) / 1000;
+
+            lblCimento.Text = cimento.ToString("0.00");
+            lblAreialt.Text = areiaLT.ToString("0.00");
+            lblAreiamt.Text = areiaMT.ToString("0.00");
+            lblAguaLitros.Text = aguaLitro.ToString("0.00");
+            lblAguaLT.Text = aguaLT.ToString("0.00");
+            lblAditivo.Text = aditivo.ToString("0.00");
+        }
     }
 }
