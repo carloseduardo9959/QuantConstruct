@@ -44,7 +44,7 @@
             this.btnRelat = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.cmdClientes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnprod = new System.Windows.Forms.Button();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
@@ -78,7 +78,7 @@
             this.MenuVertical.Controls.Add(this.btnRelat);
             this.MenuVertical.Controls.Add(this.button5);
             this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.button3);
+            this.MenuVertical.Controls.Add(this.cmdClientes);
             this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.btnprod);
             this.MenuVertical.Controls.Add(this.btnlogoInicio);
@@ -96,7 +96,7 @@
             this.submenu.Controls.Add(this.panel11);
             this.submenu.Controls.Add(this.panel10);
             this.submenu.Controls.Add(this.panel9);
-            this.submenu.Location = new System.Drawing.Point(51, 418);
+            this.submenu.Location = new System.Drawing.Point(51, 402);
             this.submenu.Name = "submenu";
             this.submenu.Size = new System.Drawing.Size(179, 100);
             this.submenu.TabIndex = 16;
@@ -230,7 +230,7 @@
             this.btnRelat.ForeColor = System.Drawing.Color.White;
             this.btnRelat.Image = ((System.Drawing.Image)(resources.GetObject("btnRelat.Image")));
             this.btnRelat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelat.Location = new System.Drawing.Point(0, 372);
+            this.btnRelat.Location = new System.Drawing.Point(0, 356);
             this.btnRelat.Name = "btnRelat";
             this.btnRelat.Size = new System.Drawing.Size(250, 40);
             this.btnRelat.TabIndex = 6;
@@ -247,7 +247,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 326);
+            this.button5.Location = new System.Drawing.Point(0, 310);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(250, 40);
             this.button5.TabIndex = 5;
@@ -263,28 +263,29 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 280);
+            this.button4.Location = new System.Drawing.Point(0, 264);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(250, 40);
             this.button4.TabIndex = 4;
             this.button4.Text = "Produtos";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // cmdClientes
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 234);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Clientes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmdClientes.FlatAppearance.BorderSize = 0;
+            this.cmdClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cmdClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdClientes.ForeColor = System.Drawing.Color.White;
+            this.cmdClientes.Image = ((System.Drawing.Image)(resources.GetObject("cmdClientes.Image")));
+            this.cmdClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdClientes.Location = new System.Drawing.Point(0, 218);
+            this.cmdClientes.Name = "cmdClientes";
+            this.cmdClientes.Size = new System.Drawing.Size(250, 40);
+            this.cmdClientes.TabIndex = 3;
+            this.cmdClientes.Text = "Clientes";
+            this.cmdClientes.UseVisualStyleBackColor = true;
+            this.cmdClientes.Click += new System.EventHandler(this.cmdClientes_Click);
             // 
             // button2
             // 
@@ -295,7 +296,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 188);
+            this.button2.Location = new System.Drawing.Point(0, 172);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(250, 40);
             this.button2.TabIndex = 2;
@@ -311,7 +312,7 @@
             this.btnprod.ForeColor = System.Drawing.Color.White;
             this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
             this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(0, 142);
+            this.btnprod.Location = new System.Drawing.Point(0, 126);
             this.btnprod.Name = "btnprod";
             this.btnprod.Size = new System.Drawing.Size(250, 40);
             this.btnprod.TabIndex = 1;
@@ -463,7 +464,7 @@
         private System.Windows.Forms.Button btnRelat;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cmdClientes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblcorreo;
         private System.Windows.Forms.Label lbluser;

@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,8 +19,6 @@ namespace GUI_V_2
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
         }
-
-      
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -69,7 +65,7 @@ namespace GUI_V_2
             SendMessage(this.Handle,0x112,0xf012,0);
         }
 
-        private void AbrirFormEnPanel(object Formhijo)
+        public void AbrirFormEnPanel(object Formhijo)
         {
             if (this.btnRelatorios.Controls.Count > 0)
                 this.btnRelatorios.Controls.RemoveAt(0);
@@ -117,6 +113,11 @@ namespace GUI_V_2
         private void btnSub3_Click(object sender, EventArgs e)
         {
             submenu.Visible = false;
+        }
+
+        private void cmdClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new frmClientes());
         }
     }
 }
