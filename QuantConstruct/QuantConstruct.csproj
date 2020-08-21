@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F49E04CD-5889-490E-8C61-1BE3798F4650}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuantConstruct</RootNamespace>
+    <AssemblyName>QuantConstruct</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculos\frmCeramica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmCeramica.Designer.cs">
+      <DependentUpon>frmCeramica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmChapisco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmChapisco.Designer.cs">
+      <DependentUpon>frmChapisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmContraPiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmContraPiso.Designer.cs">
+      <DependentUpon>frmContraPiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmLaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmLaje.Designer.cs">
+      <DependentUpon>frmLaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmPilares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmPilares.Designer.cs">
+      <DependentUpon>frmPilares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmPintura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmPintura.Designer.cs">
+      <DependentUpon>frmPintura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmPiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmPiso.Designer.cs">
+      <DependentUpon>frmPiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmReboco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmReboco.Designer.cs">
+      <DependentUpon>frmReboco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmTelhado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmTelhado.Designer.cs">
+      <DependentUpon>frmTelhado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmTijolos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmTijolos.Designer.cs">
+      <DependentUpon>frmTijolos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculos\frmVigas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculos\frmVigas.Designer.cs">
+      <DependentUpon>frmVigas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioResumen.Designer.cs">
+      <DependentUpon>InicioResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFerramentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFerramentas.Designer.cs">
+      <DependentUpon>frmFerramentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Calculos\frmCeramica.resx">
+      <DependentUpon>frmCeramica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmChapisco.resx">
+      <DependentUpon>frmChapisco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmContraPiso.resx">
+      <DependentUpon>frmContraPiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmLaje.resx">
+      <DependentUpon>frmLaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmPilares.resx">
+      <DependentUpon>frmPilares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmPintura.resx">
+      <DependentUpon>frmPintura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmPiso.resx">
+      <DependentUpon>frmPiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmReboco.resx">
+      <DependentUpon>frmReboco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmTelhado.resx">
+      <DependentUpon>frmTelhado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmTijolos.resx">
+      <DependentUpon>frmTijolos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculos\frmVigas.resx">
+      <DependentUpon>frmVigas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioResumen.resx">
+      <DependentUpon>InicioResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFerramentas.resx">
+      <DependentUpon>frmFerramentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\tijolo_c5201.jpg" />
+    <None Include="Resources\tijolo_b1214241.jpg" />
+    <None Include="Resources\tijolo_b15391.jpg" />
+    <None Include="Resources\tijolo_b15291.jpg" />
+    <None Include="Resources\tijolo_b12291.jpg" />
+    <None Include="Resources\tijolo_b10291.jpg" />
+    <None Include="Resources\tijolo_b10201.jpg" />
+    <None Include="Resources\tijolo_b10191.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
